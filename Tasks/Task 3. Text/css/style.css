@@ -1,0 +1,43 @@
+h1 {
+    font-size: 32px;
+    font-weight:bold;
+}
+h2 {
+    font-size: 24px;
+    font-style: italic;
+}
+p{
+    font-size: 14px;
+    font-weight: 400;
+}
+body {
+    font-size: 14px;
+    font-weight: 400;
+}
+.clgreen{
+    color: #0f0;
+}
+.clblue{
+    color: blue;
+}
+.clred{
+    color: red;
+}
+.cl20pt{
+    font-size: 20pt;
+}
+.clarial{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.clwhite{
+    background: white;
+}
+.clyellow{
+    background-color: yellow;
+}
+.clbold{
+    font-weight: bold;
+}
+.cl10px{
+    padding-left: 10px;
+}
