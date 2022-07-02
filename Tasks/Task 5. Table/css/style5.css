@@ -1,0 +1,16 @@
+table{
+    border-spacing: 0;
+    border-collapse: collapse;
+    color: rgb(255, 255, 255);
+}
+td{
+    width: 130px;
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
+    border: 2px solid rgb(0, 0, 0);
+}
+ tr:nth-child(2) td:nth-child(2){
+    width: 250px;
+    height: 200px;
+ }

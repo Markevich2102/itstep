@@ -1,0 +1,36 @@
+
+table{
+    border-spacing: 0;
+    border-collapse: collapse;
+    color: rgb(255, 255, 255);
+    border: 5px solid rgb(0, 0, 0);
+    background-color: rgb(104, 18, 18);
+
+}
+td{
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 30px;
+    border: 5px solid rgb(0, 0, 0);
+}
+
+.left{
+    text-align: left;
+}
+.center{
+    text-align: center;
+}
+.right{
+    text-align: right;
+}
+.top{
+    vertical-align: top;
+}
+.middle{
+    vertical-align: middle;
+}
+.bottom{
+    vertical-align: bottom;
+}

@@ -1,8 +1,32 @@
 body{
     font-size: 30px;
-    color: #eee;
-    letter-spacing: 5px;  
+    color: hsl(187, 4%, 62%);
+    letter-spacing: 5px;
+    word-spacing: 6px;  
+    line-height: 60px;
 }
-.even {
+.odd {
+    font-weight: 900;   
+}
+ins + span{
+    text-decoration: overline;
+}
+ins del{
+    text-shadow: 2px 2px 4px orange;
+}
+ins .odd del{
+    font-size: 35px;
+}
+.even{
+    color: rgba(171, 27, 111, 0.3);
+}
+.sqr{
+    opacity: 0;
+}
+.sqr:hover{
+    opacity: 1;
+} 
     
+.prime{
+    font-weight: 900;
 }
