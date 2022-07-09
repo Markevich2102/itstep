@@ -1,12 +1,117 @@
-h1 {
-    font-size: 24px;
-    font-weight:bold;
-}
-h2 {
-    font-size: 18px;
-    font-style: italic;
-}
-body {
+body{
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     font-weight: 400;
 }
+h1 {
+    font-size: 24px;
+    font-weight:bold;
+    text-align: center;
+    font-family: 'Edu SA Beginner', cursive;
+}
+h2 {
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Edu SA Beginner', cursive;
+}
+
+p{
+    text-align: justify;
+    font-style: italic;
+   
+}
+.Leftimg{
+    float: left;
+}
+.clgreen{
+    color: green;
+    text-decoration: blink;
+}
+.clgreen1{
+    color: #235b2e;
+    text-decoration: line-through;
+}
+.clred{
+    color:rgb(221, 37, 56);
+    text-decoration: overline;
+}
+table.t1 {
+    margin: 1em auto;
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .t1 th, .t1 td {
+    padding: 4px 8px;
+  }
+  .t1 thead th {
+    background: #4f81bd;
+    text-transform: lowercase;
+    text-align: left;
+    font-size: 15px;
+    color: #fff;
+  }
+  .t1 tr {
+    border-right: 1px solid #95b3d7;
+  }
+  .t1 tbody tr {
+    border-bottom: 1px solid #95b3d7;
+  }
+  .t1 tbody tr:nth-child(odd) {
+    background: #dbe5f0;
+  }
+  .t1 tbody th, .t1 tbody tr:nth-child(even) td {
+    border-right: 1px solid #95b3d7;
+  }
+  .t1 tfoot th {
+    background: #4f81bd;
+    text-align: left;
+    font-weight: normal;
+    font-size: 10px;
+    color: #fff;
+  }
+  .t1 tr *:nth-child(3), .t1 tr *:nth-child(4) {
+    text-align: right;
+  }
+
+
+  table.t2 {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Georgia;
+  }
+  .t2 caption {
+    padding-bottom: 0.5em;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  .t2 th, .t2 td {
+    padding: 4px 8px;
+    border: 2px solid #fff;
+    background: #fbd7b4;
+  }
+  .t2 thead th {
+    padding: 2px 8px;
+    background: #f69546;
+    text-align: left;
+    font-weight: normal;
+    font-size: 13px;
+    color: #fff;
+  }
+  .t2 tbody tr:nth-child(odd) *:nth-child(even), .t2 tbody tr:nth-child(even) *:nth-child(odd) {
+    background: #f3eddd;
+  }
+  .t2 tfoot th {
+    padding: 2px 8px;
+    background: #f69546;
+    text-align: left;
+    font-weight: normal;
+    font-size: 10px;
+    color: #fff;
+  }
+  .t2 tr *:nth-child(3), .t2 tr *:nth-child(4) {
+    text-align: right;
+  }
+  .climg{
+    list-style-image: url(../img/baterfly.jpg);
+    
+  }
