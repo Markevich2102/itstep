@@ -1,0 +1,115 @@
+div{
+    position: relative;
+    float: left;
+    text-align: center;
+    line-height: 100px;
+    color: #fff;
+    font-size: 30px;
+}
+.main{
+    width: 400px;
+    height: 700px;
+    position: absolute;
+    top: calc(50% - 200px);
+    left: calc(50% - 200px);
+    vertical-align: middle;
+}
+.header{
+    width: 400px;
+    height: 200px;
+    background: rgb(224, 18, 155);
+
+}
+.h1{
+    width: 100px;
+    height: 200px;
+    background: rgb(202, 82, 82);
+    text-align: center;
+    vertical-align: middle;
+}
+.h2{
+    width: 100px;
+    height: 200px;
+    background: rgb(52, 167, 123);
+}
+.h3{
+    width: 100px;
+    height: 200px;
+    background: rgb(77, 187, 104);
+}
+.h4{
+    width: 100px;
+    height: 200px;
+    background: rgb(134, 40, 114);
+}
+.content{
+    width: 400px;
+    height: 500px;
+}
+.part1{
+    width: 400px;
+    height: 300px;
+}
+.part1-column1{
+    width: 100px;
+    height: 300px;  
+    background: rgb(185, 51, 114); 
+}
+.part1-line1{
+    width: 300px;
+    height: 200px;
+    background: rgb(83, 84, 170);
+}
+.part1-line1-column1{
+    width: 200px;
+    height: 200px;
+    background: rgb(187, 204, 39);
+    vertical-align: middle;
+
+}
+.part1-line2{
+    width: 300px;
+    height: 100px;
+    background: rgb(39, 133, 97);
+}
+.post1{
+    width: 100px;
+    height: 100px;
+    background: rgb(8, 93, 150);
+}
+.post2{
+    width: 100px;
+    height: 100px;
+    background: rgb(31, 133, 28);
+}
+.post3{
+    width: 100px;
+    height: 100px;
+    background: rgb(214, 30, 61);
+}
+.part2{
+    width: 400px;
+    height: 200px;
+}
+.part2-column1{
+    width: 100px;
+    height: 200px;
+    background: rgb(243, 3, 3);
+    vertical-align: middle;
+}
+.part2-column2{
+    width: 200px;
+    height: 200px;
+    background: rgb(91, 92, 17);
+}
+.part2-column2-column1{
+    width: 200px;
+    height: 100px;
+    background: rgb(185, 146, 17); 
+}
+.part2-column3{
+    width: 100px;
+    height: 200px;
+    background: rgb(56, 22, 136);
+    vertical-align: middle;
+}

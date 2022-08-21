@@ -1,0 +1,82 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+}
+a{
+    position: fixed;
+    display: block;
+    color: #fff;
+    background: black;
+    padding: 15px 20px;
+    top: 40px;
+}
+.start{
+    left: calc(50% - 150px);
+}
+.end{
+    left: calc(50% + 30px);
+}
+.box{
+    width: 800px;
+    height: 800px;
+    background: rgb(255, 255, 255);
+    box-sizing: border-box;
+    border: 0px solid #456783;
+    transition-property: transform;
+    transition-timing-function: linear;
+    transition-duration: 3s;
+    position: relative;
+}
+
+.ball{
+    width: 100px;
+    height: 100px;
+    background: rgb(255, 0, 0);
+    top: 0;
+    left:0;
+    position: absolute;
+    transition-property: background, width, height, border-radius;
+    transition-timing-function: linear;
+    transition-duration: 5s;
+}
+#box:target  .ball{
+    width: 200px;
+    height: 200px;
+    bottom: 200px;
+    right:200px;
+    border-radius: 50%;
+    position: absolute;
+    background: rgb(6, 224, 17);
+    transition-property: top;
+    transition-timing-function: linear;
+    transition-duration: 5s;
+}
+
+b,a span{
+    font-size: 14px;
+}
+#box:target .ball{
+    animation: run 4s linear infinite,rotate 4s linear 2;
+}
+@keyframes run{
+    0%{
+        top:0;
+        left: 0;
+    }
+    
+    50%{
+        top:400px;
+        left: 400px;
+    }
+    
+    100%{
+        top:400px;
+        left: 400px;
+    }
+}
+
