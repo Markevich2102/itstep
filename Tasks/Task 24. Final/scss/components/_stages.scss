@@ -1,0 +1,56 @@
+.stages {
+    width: 1920px;
+    height: 848px;
+    align-items: center;
+    background: $black;
+    color: $white;
+
+}
+.row-container {
+    padding: 160px 70px 0 70px;
+    display: flex;
+    position: relative;
+
+    .stages-info {
+        width: 395px;
+        height: 150px;
+        margin-right: 315px;
+
+        .row-stages-info {
+            padding: 0;
+
+            .stages-text {
+                    width: 90%;
+                    font-size: 24px;
+            }
+        }
+    }
+}
+
+.stages-points{
+    
+    width: 1068px;
+    
+    h2{
+        color: $red;
+    }
+}
+
+.point{
+    display: flex;
+    border-top:0.5px solid $white;
+
+    p{
+        padding-top: 10px;
+    }
+
+    .number {
+        padding-right: 70px;
+    }
+      
+}
+.point4{
+    border-bottom: 0.5px solid $white;
+
+}
+

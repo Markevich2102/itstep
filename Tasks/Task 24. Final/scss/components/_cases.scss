@@ -1,0 +1,88 @@
+.cases {
+    width: 1920px;
+    height: 1022px;
+    align-items: center;
+    background: $white;
+    color: $black;
+
+}
+.row-cases{
+    display: flex;
+    padding: 168px 70px 152px 70px;
+    box-sizing: border-box;
+}
+.works{
+    width: 413px;
+    margin-right: 97px;
+    .row-works{
+        
+        .works-title{
+            
+            ul{
+            
+                list-style: none;
+                display: flex;
+                padding: 0;
+                margin: 0;
+                
+                .red{
+                    color: $red;
+                    padding-right: 20px;
+                    
+                }
+            }
+
+        }
+        .works-text{
+            width: 105%;
+            font-size: 24px;
+            
+        }
+        .work-see{
+            align-items: center;
+            padding: 20px 40px 20px 40px;
+            border: 1px solid $black;
+            width: 220px;
+            
+            
+            a {
+                    color: $black;
+                    width: 142px;
+                    display: block;
+                    
+                }
+            
+            .see{
+                margin-left: 53px;
+                width: 16px;
+                height: 13px;
+                display: inline-block;
+                background-image: url(../../img/Group8.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+
+
+        }
+    }
+}
+.mobile-tracker{
+    width: 418px;
+    margin-right: 20px;
+    a {
+            color: $black;
+        }
+}
+.univer-today{
+    width: 418px;
+    margin-right: 20px;
+    a {
+            color: $black;
+        }
+}
+.materials{
+    width: 418px;
+    a {
+            color: $black;
+        }
+}

@@ -1,0 +1,180 @@
+.contact {
+    width: 1920px;
+    height: 980px;
+    align-items: center;
+    background: $white;
+    color: $black;
+
+}
+
+.row-contact {
+    display: flex;
+    padding: 160px 70px 0px 70px;
+    box-sizing: border-box;
+}
+
+.contact-info {
+    width: 422px;
+    height: 250px;
+    margin-right: 298px;
+
+    .row-contact-info {
+
+        .info-title {
+            padding-bottom: 30px;
+
+            ul {
+
+                list-style: none;
+                display: flex;
+                padding: 0;
+                margin: 0;
+                
+
+                .red {
+                    color: $red;
+                    padding-left: 20px;
+                    width: 20%;
+
+                }
+            }
+        }
+    }
+}
+
+.contact-info-liks {
+    width: 401px;
+    
+    a {
+        color: $black;
+        font-size: 24px;
+
+    }
+    p{
+        font-size: 24px;
+
+    }
+}
+
+.symbol-phone{
+    display: flex;
+    align-items: flex-end;
+    
+        img {
+            width: 30px;
+            height: 30px;
+            margin-right: 30px;
+        }
+
+
+}
+.symbol-address{
+    display: flex;
+    align-items: center;
+    
+    
+        img {
+            width: 30px;
+            height: 30px;
+            margin-right: 30px;
+        }
+}
+.symbol-mail {
+    display: flex;
+    align-items: flex-end;
+    
+    img {
+            width: 30px;
+            height: 30px;
+            margin-right: 30px;
+        }
+        
+}
+
+.reg-form{
+
+    width: 1060px;
+    border: 0.5px solid $gray;
+    padding: 90px 120px;
+    margin-top: 45px;
+    
+
+    .row-form{
+        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        box-sizing: border-box;
+       
+
+        .input1 {
+            
+            padding-bottom: 60px;
+            
+            
+
+            input{
+                text-transform: uppercase;
+                width: 359px;
+                height: 49px;
+                border: none;
+                border-bottom: 0.5px solid $gray;
+                
+            }
+        }
+        .message{
+            width: 100%;
+            padding-bottom: 60px;
+
+            input {
+                text-transform: uppercase;
+                width: 100%;
+                border: none;
+                border-bottom: 0.5px solid $gray;
+            }
+        }
+        .styled_checkbox{
+            position: relative;
+
+            input{
+                position: absolute;
+                width: 18px;
+                height: 18px;
+                padding: 0;
+            }
+
+            label{
+                font-size: 14px;
+                margin-left: 40px;
+
+            }
+
+            a{
+                font-size: 14px;
+                color: $red;
+            
+            }
+        }
+        
+        .send{
+            margin-right: 60px;
+            margin-top: 50px;
+            width: 20%;
+            background-color: $red;
+            margin-left: auto;
+           
+
+            button{
+                display: block;
+                background: $red;
+                color: $white;
+                border: none;
+                padding: 16px 60px 16px 60px;
+
+
+
+            }
+
+        }
+    }  
+}

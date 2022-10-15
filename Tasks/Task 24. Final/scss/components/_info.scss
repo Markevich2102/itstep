@@ -1,0 +1,68 @@
+.info {
+    width: 1920px;
+    height: 942px;
+    align-items: center;
+    background: $black;
+    color: $white;
+    
+}
+
+.row{
+    padding: 0 70px; 
+}
+
+.choice-title{
+    width: 75%;
+    padding-top: 170px;
+    padding-bottom: 150px;
+}
+.choice{
+    width: 100%;
+
+    .row-choice{
+        display: flex;
+    }
+}
+.communication{
+    width: 40%;
+    height: 200px;
+    padding-right: 5%;
+    .row-communication{
+       
+    }
+}
+.communication{
+    width: 40%;
+    height: 200px;
+    padding-right: 5%;
+    .row-communication{
+        .communication-title{
+            margin: 20px 0;
+        }
+       
+    }
+}
+.individuality {
+    width: 40%;
+    height: 200px;
+    padding-right: 10%;
+
+    .row-individuality {
+        .individuality-title {
+            margin: 20px 0;
+        }
+
+    }
+}
+.speed {
+    width: 40%;
+    height: 200px;
+    padding-right: 10%;
+
+    .row-speed{
+        .speed-title {
+            margin: 20px 0;
+        }
+
+    }
+}

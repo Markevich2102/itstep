@@ -1,0 +1,120 @@
+.blog {
+    width: 1920px;
+    height: 866px;
+    align-items: center;
+    background: $gray;
+    color: $black;
+
+}
+.row1{
+    display: flex;
+    padding: 160px 80px 160px 70px;
+    box-sizing: border-box;
+    
+}
+.blog-info{
+    width: 353px;
+    margin-right: 150px;
+
+    .row-blog{
+        
+        .blog-title{
+            
+        }
+
+        .blog-text{
+            font-size: 24px;
+            width: 110%;
+            margin: 30px 0;
+        }
+
+        .blog-see{
+            align-items: center;
+            padding: 20px 40px 20px 40px;
+            border: 1px solid $black;
+            width: 220px;
+            
+            a{
+                color: $black;
+                width: 142px;
+                display: block;
+            }
+            
+            .see {
+                margin-left: 53px;
+                width: 16px;
+                height: 13px;
+                display: inline-block;
+                background-image: url(../../img/Group\ 8.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+        }
+    }
+}
+.results{
+    width: 430px;
+    margin-right: 20px;
+    background-color: $white;
+    height: 546px;
+    
+    .row-results {
+            padding: 50px;
+
+            img{
+                position: relative;
+                left: calc(50% - 100px);
+                align-items: center;
+                margin-bottom: 10px;
+                
+            }
+    }
+
+    a {
+            color: $black;
+    }
+}
+
+.market{
+    width: 430px;
+    margin-right: 20px;
+    background-color: $white;
+    height: 546px;
+
+    .row-market {
+            padding: 50px;
+
+            img {
+                position: relative;
+                left: calc(50% - 100px);
+                align-items: center;
+                margin-bottom: 10px;
+            
+            }
+        }
+
+    a {
+            color: $black;
+        }
+}
+.cloud{
+    width: 430px;
+    background-color: $white;
+    height: 546px;
+
+    .row-cloud{
+        padding: 50px;
+
+        img {
+            position: relative;
+            left: calc(50% - 100px);
+            align-items: center;
+            margin-bottom: 10px;
+        
+        }
+    }
+    
+    a {
+            color: $black;
+    }
+}

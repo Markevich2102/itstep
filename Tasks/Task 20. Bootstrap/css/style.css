@@ -1,0 +1,188 @@
+body
+{font-family: 'Open Sans', sans-serif;
+    
+}
+.container{
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+.portfolio{
+    background: #000;
+    margin: 20px 0;
+}
+.portfolio-title{
+    display: flex;
+    flex-direction: column; 
+    text-align: center;
+}
+.portfolio-title h4{
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    margin: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.portfolio-title h2{
+    color: #fff;
+    text-align: center;
+    font-size: 36px;
+    margin: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.images{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+   
+}
+.image{
+    min-height: 273px;
+    background-position: 50% 50%;
+    
+}
+.image1{
+    background: url(../img/1.png);
+    
+}
+.image2{
+    background: url(../img/2.png);
+     
+}
+.image3{
+    background: url(../img/3.png);
+      
+}
+.image4{
+    background: url(../img/4.png);
+  
+}
+.image5{
+    background: url(../img/5.png);
+    
+}
+.image6{
+    background: url(../img/6.png);
+      
+}
+.image7{
+    background: url(../img/7.png);
+      
+}
+.image8{
+    background: url(../img/8.png);
+      
+}
+
+.team{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+   position: relative;   
+}
+.world{
+    min-height: 300px;
+    background-position: 50% 50%;
+    width: 50%;
+    
+
+}
+.image9{
+    
+    background-size: cover;
+}
+.content{
+    height: 300px;
+    background-position: 50% 50%;
+    text-align: center;
+    width: 50%;
+}
+.h4{
+    font-size: 1.25rem;
+}
+.read{
+    font-size: 1.75rem;
+}
+.footer-footer{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    position: relative;
+   background-color: black;
+   color: wheat;
+   text-align: center;
+   height: 200px;
+   padding-top: 50px;
+   padding-bottom: 50px;
+
+}
+.contact-address{
+    background-position: 50% 50%;
+    width: 100%;
+}
+.contact{
+    background-position: 50% 50%;
+    width: 100%;
+}
+
+
+@media (min-width: 440px){
+    .image{
+        width: 100%;
+       background-size: cover;
+    }
+    .image9{
+        width: 100%;
+       background-size: cover;
+       
+    }
+   
+}
+@media (min-width: 600px){
+    .image{
+        width: 100%;
+    }
+}
+@media (min-width: 768px){
+    .image{
+        width: 50%;
+        
+    }
+    .image9{
+        width: 50%;
+    
+    }
+    .content{
+        width: 50%;
+    
+    }
+    .contact-address{
+        width: 50%;
+    }
+    .contact{
+        width: 50%;
+    }
+}
+@media (min-width: 1024px){
+    .image{
+        width: 25%;
+        min-height: 357px;
+    }
+}
+@media (min-width: 1200px){
+    .image{
+        width: 25%;
+    }
+}
+a:link {
+    border-width: 2px;
+    border-style: solid;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    letter-spacing: 2px;
+    border-color: #454545;
+    color: #454545;
+   padding: 10px 30px;
+   text-decoration: none;
+   
+  }
