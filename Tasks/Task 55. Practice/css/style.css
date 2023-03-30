@@ -1,0 +1,151 @@
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+}
+
+.box {
+    width: 400px;
+    height: 400px;
+    background-color: chartreuse;
+}
+
+.bg-blue {
+    background-color: aqua;
+}
+
+.box>div {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    float: left;
+}
+
+.black {
+    background: black;
+}
+
+.white {
+    background: white;
+}
+
+.chess {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    background: grey;
+    border-radius: 50%;
+}
+
+.first-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid blue;
+}
+
+.second-player {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid red;
+}
+
+li {
+    margin: 10px;
+}
+
+.chessBoard {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    border: 4px double black;
+}
+
+.black {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+}
+
+.white {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+}
+
+.btn {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #e74c3c;
+    border-radius: 0.6em;
+    color: #e74c3c;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 20px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.checker {
+    width: 50px;
+    height: 50px;
+    background: #ff3c01;
+    border-radius: 50%;
+}
+
+.animation {
+    transition-timing-function: linear;
+    transition-duration: 1s;
+    transform: rotate(90deg);
+}
+.classWork3{
+    width: 50px;
+    height: 50px;
+    background: #ff3c01;
+    border: 4px double black;
+}
+.firstValue, .secondValue{
+    padding: 50px;
+
+}
+.task9{
+    width: 400px;
+    height: 200px;
+    border: 2px solid black;
+   word-break: break-all;
+}
+.ppp{
+    width: 400px;
+    height: 200px;
+    border: 2px solid black;
+   word-break: break-all;
+
+}

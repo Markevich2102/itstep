@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <input type="text" name="LocalityName" id="LocalityNames" value=" ">
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="form-label">
+                <label for="area">Район:</label>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="form-control">
+                <select name="area" id="area">
+                    <option value="">Выберите район</option>
+                    <option value="Витебский">Витебский район</option>
+                    <option value="Бешенковичский">Бешенковичский район</option>
+                    <option value="Браславский">Браславский район</option>
+                    <option value="Верхнедвинский">Верхнедвинский район</option>
+                    <option value="Глубокский">Глубокский район</option>
+                    <option value="Городокский">Городокский район</option>
+                    <option value="Докшицкий">Докшицкий район</option>
+                    <option value="Дубровенский">Дубровенский район</option>
+                    <option value="Лепельский">Лепельский район</option>
+                    <option value="Лиозненский">Лиозненский район</option>
+                    <option value="Миорский">Миорский район</option>
+                    <option value="Оршанский">Оршанский район</option>
+                    <option value="Полоцкий">Полоцкий район</option>
+                    <option value="Поставский">Поставский район</option>
+                    <option value="Россонский">Россонский район</option>
+                    <option value="Сенненский">Сенненский район</option>
+                    <option value="Толочинский">Толочинский район</option>
+                    <option value="Ушачский">Ушачский район</option>
+                    <option value="Чашникский">Чашникский район</option>
+                    <option value="Шарковщинский">Шарковщинский район</option>
+                    <option value="Шумилинский">Шумилинский район</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="form-label">
+                <label>Тип населённого пункта:</label>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="form-control">
+                <div class="form-control-radio">
+                    <input type="radio" name="typeLocality" id="city" value="Город">
+                    <label for="city">Город</label>
+                </div>
+                <div class="form-control-radio">
+                    <input type="radio" name="typeLocality" id="town" value="Посёлок городского типа">
+                    <label for="town">Посёлок городского типа</label>
+                </div>
+                <div class="form-control-radio">
+                    <input type="radio" name="typeLocality" id="village" value="Село">
+                    <label for="village">Село</label>
+                </div>
+                <div class="form-control-radio">
+                    <input type="radio" name="typeLocality" id="smallVillage" value="Посёлок">
+                    <label for="smallVillage">Посёлок</label>
+                </div>
+                <div class="form-control-radio">
+                    <input type="radio" name="typeLocality" id="station" value="Станция">
+                    <label for="station">Станция</label>
+                </div>
+                <div class="form-control-radio">
+                    <input type="radio" name="typeLocality" id="departure" value="Разъезд">
+                    <label for="departure">Разъезд</label>
+                </div>
+                <div class="form-control-radio">
+                    <input type="radio" name="typeLocality" id="farm" value="Хутор">
+                    <label for="farm">Хутор</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="btn third btn_add">Добавить</button>
+    <button class="btn third btn_save">Сохранить</button>
+    <table>
+        <thead>
+            <tr>
+                <th>Название</th>
+                <th>Раойн</th>
+                <th>Тип</th>
+                <th>Действия</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Витебск</td>
+                <td>Витебский район</td>
+                <td>Город</td>
+                <td>
+                    <button class="edit-button">Редактировать</button>
+                    <button class="delete-button">Удалить</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="./js/main1.js"></script>
+</body>
+
+</html>

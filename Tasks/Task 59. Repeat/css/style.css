@@ -1,0 +1,78 @@
+html{
+    height: 100%;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+}
+
+.field{
+    width: 400px;
+    height: 400px;
+    position: relative;
+}
+.field > div{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    float: left;
+    background: green;
+}
+.field > .wall{
+    background: #000;
+}
+.field > .robot{
+    position: absolute;
+    background: red;
+    width: 100px;
+    height: 100px;
+    top: 0;
+    left: 0;
+}
+div{
+    width: 400px;
+    height: 100px;
+    border: 1px solid #000;
+    text-align: center;
+    margin-left: 80px;
+}
+.click{
+    color: red;
+    background-color: black;
+
+}
+.form-control button{
+    width: 50%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #bfbfbf;
+    box-sizing: border-box;
+    background: #97f39f;   
+}
+.form-control button:hover{
+    background: green;
+}
+.row{
+	float: none;
+}
+
+.form-control button:active{
+    background: red;
+}
+.form-control input[type="text"]:focus{
+    border:1px solid rgb(219, 89, 180);
+}
+
+
+.blue{
+    background-color: aqua;
+}
+
+.text{
+    height: 400px;
+    width: 400px;
+    margin-top: 300px;
+    margin-left: 50px;
+}

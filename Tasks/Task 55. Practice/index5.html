@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="firstValue">
+        <div>Первое значение</div>
+        <input type="text" name="number" id="number1" value="0">
+        <div class="error1"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="form-label">
+                <label>Выберите действие</label>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="form-control">
+                <div class="form-control-radio">
+                    <input type="radio" name="action" id="actionPlus" value="+">
+                    <label for="actionPlus">+</label>
+                </div> 
+                <div class="form-control-radio">
+                    <input type="radio" name="action" id="actionMinus" value="-">
+                    <label for="actionMinus">-</label>
+                </div>
+                <div class="form-control-radio">
+                    <input type="radio" name="action" id="actionMultiply" value="*">
+                    <label for="actionMultiply">*</label>
+                </div> 
+                <div class="form-control-radio">
+                    <input type="radio" name="action" id="actionDivide" value="/">
+                    <label for="actionDivide">/</label>
+                </div>
+            </div>         
+        </div>
+    </div>
+    <div class="secondValue">
+        <div>Второе значение</div>
+        <input type="text" name="number" id="number2" value="0">
+        <div class="error2"></div>
+    </div>
+    <div>
+        <div>Вывод результата</div>
+        <div class="result"></div>
+    </div>
+    <script src="./js/main5.js"></script>
+</body>
+</html>
