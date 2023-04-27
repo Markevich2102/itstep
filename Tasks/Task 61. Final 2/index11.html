@@ -19,7 +19,7 @@
             </div>
             <div class="col-lg-6">
                 <div class="form-control">
-                    <input type="text" name="code" id="code" value="" placeholder="Введите код товара">
+                    <input type="text" name="code" id="code" value="" placeholder="Введите код товара" required>
                 </div>
             </div>
         </div>
@@ -31,7 +31,7 @@
             </div>
             <div class="col-lg-6">
                 <div class="form-control">
-                    <input type="text" name="name" id="name" value="" placeholder="Введите название">
+                    <input type="text" name="name" id="name" value="" placeholder="Введите название" required>
                 </div>
             </div>
         </div>
@@ -43,7 +43,7 @@
             </div>
             <div class="col-lg-6">
                 <div class="form-control">
-                    <input type="text" name="price" id="price" value="" placeholder="Введите цену одной единицы">
+                    <input type="text" name="price" id="price" value="" placeholder="Введите цену одной единицы" required>
                 </div>
             </div>
         </div>
@@ -55,7 +55,7 @@
             </div>
             <div class="col-lg-6">
                 <div class="form-control">
-                    <input type="text" name="quantity" id="quantity" value="" placeholder="Введите количество">
+                    <input type="text" name="quantity" id="quantity" value="" placeholder="Введите количество" required>
                 </div>
             </div>
         </div>
@@ -64,7 +64,7 @@
             </div>
             <div class="col-lg-6">
                 <div class="form-control">
-                    <button type="submit">Добавить</button>
+                    <button type="submit" class="product">Добавить</button>
                 </div>
             </div>
         </div>
@@ -81,8 +81,8 @@
             </tr>
         </table>
         <div>
-            <div>Итоговая сумма</div>
-            <div></div>
+            <div>Итоговая сумма составляет:</div>
+            <div class="results"></div>
         </div>
     </div>
     <script src="./js/main11.js"></script>
