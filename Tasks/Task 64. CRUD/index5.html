@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app"></div>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        function App() {
+
+            const [book, setBook] = React.useState({//создаём переменную для form
+                title: "",
+                author: "",
+                genre: "Роман",
+                numberOfpages: ""
+            });
+            const [books, setBooks] = React.useState([{//создаём переменную для table и заносим ее в массив и в массиве создаём объект 
+                title: "Вторая",
+                author: "Кто-то автор",
+                genre: "Роман",
+                numberOfpages: "1500"
+            }]);
+
+            function handleChangeTitle(event) {
+                setBook({...book, title:event.target.value});
+            }
+            function handleChangeAuthor(event) {
+                setBook({...book, author:event.target.value});
+            }
+            function handleChangeGenre(event) {
+                setBook({...book, genre:event.target.value});
+            }
+            function handleChangeNumberOfpages(event) {
+                setBook({...book, numberOfpages:event.target.value});
+            }
+
+            function formChange(event) {
+                event.preventDefault();
+                setBooks([...books,book]);
+                setBook({
+                    title: "",
+                    author: "",
+                    genre: "Детектив",
+                    numberOfpages: ""
+                });
+
+            }
+
+            return (<>
+                <div>
+                    <form action="" onSubmit={formChange}>
+                        <div>
+                            <label for="title">Название</label>
+                            <input type="text" name="title" value={book.title} id="title" onChange={handleChangeTitle} />
+                        </div>
+                        <div>
+                            <label for="author">Автор</label>
+                            <textarea name="title" value={book.author} id="title" onChange={handleChangeAuthor} />
+                        </div>
+                        <div>
+                            <label for="genre">Жанр</label>
+                            <select name="genre" id="genre" value={book.genre} onChange={handleChangeGenre}>
+                                <option value="Фантастика">Фантастика</option>
+                                <option value="Роман" >Роман</option>
+                                <option value="Детектив" >Детектив</option>
+                                <option value="Приключения">Приключения</option>
+                            </select>
+
+                        </div>
+                        <div>
+                            <label for="numberOfpages">Количество страниц</label>
+                            <input type="text" name="numberOfpages" value={book.numberOfpages} id="numberOfpages" onChange={handleChangeNumberOfpages} />
+                        </div>
+                        <div>
+                            <button type="submit">Сохранить</button>    
+                        </div> 
+                    </form>
+                </div>
+                <div >
+                    <table>
+                        <tr>
+                            <th>Номер</th>
+                            <th>Название</th>
+                            <th>Автор</th>
+                            <th>Жанр</th>
+                            <th>Количество страниц</th>
+                            <th>Действия</th>
+                        </tr>
+                        {books.map(function (item, index) {
+                            return (<tr>
+                                <th>{index+1}</th>
+                                <th>{item.title}</th>
+                                <th>{item.author}</th>
+                                <th>{item.genre}</th>
+                                <th>{item.numberOfpages}</th>
+                                <th>
+                                    <button>Добавить</button>
+                                    <button>Удалить</button>
+                                </th>
+                            </tr>);
+                        })
+                        }
+                    </table>
+                </div>
+            </>
+            );
+        }
+
+        ReactDOM.createRoot(document.getElementById("app"))
+            .render(
+                <App />
+            );
+    </script>
+</body>
+
+</html>

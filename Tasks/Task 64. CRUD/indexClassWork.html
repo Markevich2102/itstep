@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+        href="./img/200x113_21_0746c7822e3b08443d2a1991cd3c39b2@640x361_0xac120003_15667946461625731283.jpg">
+    <link rel="stylesheet"
+        href="./img/200x113_21_1640c8046d8ccb92fe6ac1cce4340efa@620x350_0xc35dbb80_16865731281502093429.jpeg">
+    <link rel="stylesheet"
+        href="./img/200x113_21_3ac3ca117c48f7bc44f0863250835530@400x530_0xd42ee42a_13033605611418222367.jpeg">
+    <link rel="stylesheet"
+        href="./img/200x113_21_566cbccc71e9ea1f48bb736b72bf914c@600x673_0xd42ee42a_11221523931386236492.jpeg">
+    <link rel="stylesheet"
+        href="./img/200x113_21_c19cc4961dfc4117a1da8cfb7b32cf04@300x400_0xc0a83945_14065580871374569492.jpg">
+    <link rel="stylesheet"
+        href="./img/200x113_21_d462b18504817314b85976d6eb62ab29@1063x600_0xac120003_3259686131661782717.jpeg">
+</head>
+
+<body>
+    <div id="app"></div>
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+
+        function Blog() {
+
+            const [post, setPost] = React.useState(//то , что мы изначально заполняем(данные по сути)
+                {
+                    title: "",
+                    content: "",
+                    image: ""
+                }
+            );
+
+            const [posts, setPosts] = React.useState([//то что будет выводиться как результат 
+                {
+                    title: "",
+                    content: "",
+                    image: "",
+                    date: new Date()
+                }
+            ]);
+
+            const [editIndex, setEditIndex] = React.useState(-1);
+
+            function handleFormSubmit(event) {
+                event.preventDefault();
+                if (editIndex == - 1) {
+                    
+                    setPosts([...posts, post]);
+                    setPost({
+                        title: "",
+                        content: "",
+                        image: ""
+                    });
+                } else {
+                    posts[editIndex] = post;
+                    setPosts([...posts]);
+                    setPost({
+                        title: "",
+                        content: "",
+                        image: ""
+                    });
+                    setEditIndex(-1);
+                }
+            }
+
+            function handleTitleChange(event) {
+                setPost({ ...post, title: event.target.value });
+            }
+            function handleContentChange(event) {
+                setPost({ ...post, content: event.target.value });
+            }
+            function handleImageChange(event) {
+                setPost({ ...post, image: event.target.value });
+            }
+
+            function handleBookDelete(event) {
+                let index = +event.target.dataset.id;
+                posts.splice(index, 1);
+                setPosts([...posts]);
+            }
+
+            function handleBookEdit(event) {
+                let index = +event.target.dataset.id; // event.target - кнопка dataset.id - атрибут data-id кнопки
+                // index - номер книги в массиве books
+                let editBook = posts[index]; // редактируемая книга, поулченная по номеру элемента в массиве
+                setPost({
+                    title: editBook.title,
+                    content: editBook.content,
+                    image: editBook.image,
+
+                });
+                setEditIndex(index);
+            }
+
+
+
+            return <>
+                <div>
+                    <form action="" onSubmit={handleFormSubmit}>
+                        <div>
+                            <label for="title">Название</label>
+                            <input type="text" value={post.title} name="title" id="title" onChange={handleTitleChange} />
+                        </div>
+                        <div>
+                            <label for="content">Содержание</label>
+                            <textarea name="content" id="content" value={post.content} onChange={handleContentChange} />
+                        </div>
+
+                        <div>
+                            <label for="image">Изображение</label>
+                            <textarea type="text" name="image" id="image" value={post.image} onChange={handleImageChange} />
+                        </div>
+                        <div>
+                            <button type="submit">{editIndex > -1 ? <>Сохранить</> : <>Добавить</>}</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div>
+                    <table>
+                        <tr>
+                            <th>Номер поста</th>
+                            <th>Название</th>
+                            <th>Текст</th>
+                            <th>Изображение</th>
+                            <th>Дата публикации</th>
+                            <th>Действия</th>
+                        </tr>
+                        {
+                            posts.map(function (item, index) {
+                                return <tr>
+                                    <td>{index + 1}</td>
+                                    <td>{item.title}</td>
+                                    <td>{item.content}</td>
+                                    <td><img src={"./img/" + item.image} /></td>
+                                    <td> {/*item.date.toLocaleDateString()*/}</td>
+                                    <td>
+                                        <button onClick={handleBookEdit} data-id={index}>Редактировать</button>
+                                        <button onClick={handleBookDelete} data-id={index}>Удалить</button>
+                                    </td>
+                                </tr>
+                            })
+                        }
+                    </table>
+                </div>
+            </>;
+
+        }
+        ReactDOM.createRoot(
+            document.getElementById("app")
+        )
+            .render(
+                <Blog />
+            )
+    </script>
+</body>
+
+</html>

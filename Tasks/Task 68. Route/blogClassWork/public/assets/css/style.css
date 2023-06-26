@@ -1,0 +1,23 @@
+body{
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+#app{
+    width: 800px;
+}
+.blog_posts{
+    margin-top: 50px;
+}
+.button_trash,.button_view{
+    cursor: pointer;
+    border: 0;
+    background-color: #fff;
+}
+.button_favorites, .button_favorite, .button_unfavorite{
+     cursor: pointer;
+    border: 0;
+    background-color: #fff;
+
+}

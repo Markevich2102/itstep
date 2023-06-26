@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app"></div>
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+
+        function Game() {
+            let currentPlayer = 1;
+            let lastLetter;
+            let badLetter = ["ь", "ъ", "ы", "ё"];
+
+            const [player1, setPlayer1] = React.useState([{
+                number: "",
+                cityName: ""
+            }]);
+
+            const [player2, setPlayer2] = React.useState([{
+                number: "",
+                cityName: ""
+            }]);
+
+            const [city, setCity] = React.useState();
+            //const [currentPlayer, setCurrentPlayer] = React.useState();
+
+
+            function handleCityNameChange(event) {
+
+                setCity(event.target.value);
+
+            }
+
+            function cityClick(event) {
+                if(currentPlayer == 1){
+
+                    setPlayer1([{...player1,cityName:event.target.previousElementSibling.value}])
+                    setPlayer2([{...player2,cityName:event.target.previousElementSibling.value}])
+                    currentPlayer = 2;
+                    setPlayer1([...player1,city]);
+                    setPlayer2([...player2,city]);
+
+                }else{
+                    setPlayer2([{...player2,cityName:event.target.previousElementSibling.value}])
+                    currentPlayer = 1;
+
+                }
+            }
+
+
+
+            return <>
+                <div>
+                    <input type="text" name="city" id="city" value={city} onChange={handleCityNameChange} />
+                    <button class='play' onClick={cityClick}>Добавить город</button>
+                </div>
+
+                <div>
+                    <table>
+                        <tr>Первый игрок</tr>
+                        <tr>
+                            <th>Номер города</th>
+                            <th>Название города</th>
+                        </tr>
+                        {
+                            player1.map(function (item, index) {
+                                return <tr>
+                                    <td>{index + 1}</td>
+                                    <td>{item.cityName}</td>
+                                </tr>
+                            })
+                        }
+                    </table>
+                </div>
+                <div>
+                    <table>
+                        <tr>Второй игрок</tr>
+                        <tr>
+                            <th>Номер города</th>
+                            <th>Название города</th>
+                        </tr>
+                        {
+                            player2.map(function (item, index) {
+                                return <tr>
+                                    <td>{index + 1}</td>
+                                    <td>{item.cityName}</td>
+                                </tr>
+                            })
+                        }
+                    </table>
+                </div>
+            </>;
+
+        }
+        ReactDOM.createRoot(
+            document.getElementById("app")
+        )
+            .render(
+                <Game />
+            )
+    </script>
+</body>
+
+</html>
