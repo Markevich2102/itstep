@@ -1,0 +1,58 @@
+.row-info-text {
+    padding-left: 110px;
+}
+
+.row-info-university {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .university {
+        width: 300px;
+        height: 300px;
+        padding: 10px;
+       /* transform: scale(1.05);*/
+
+        
+
+        .row-university-image {
+            background-color: $bgcoloruniversity;
+            border-radius: 10px;
+
+            img {
+                width: 300px;
+                height: 200px;
+                border-radius: 10px;
+                /*transform: scale(1.05);*/
+                /*background-size: cover;*/
+                
+                
+
+            }
+            /*.university-image:hover{
+                transform: scale(1.05);
+            }*/
+
+            .university-image-text {
+
+                height: 70px;
+                background-color: $bgcoloruniversity;
+                border-radius: 10px;
+                padding: 0 10px;
+
+                p {
+                    color: $black;
+                }
+
+            }
+
+            .university-image-text:hover {
+                a {
+                    p {
+                        color: $red;
+                    }
+                }
+            }
+        }
+    }
+}

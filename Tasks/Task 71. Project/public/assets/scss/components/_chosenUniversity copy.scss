@@ -1,0 +1,135 @@
+.container-chosenUniversity {
+    display: flex;
+    box-sizing: border-box;
+
+    .row-chosenUniversity-text {
+        width: 50%;
+    }
+
+    .row-chosenUniversity-image {
+        width: 75%;
+        padding: 10px;
+
+        img {
+            border-radius: 10px;
+            width: 100%;
+            height: 100%;
+
+        }
+    }
+}
+
+.chosenUniversity-info {
+    position: relative;
+    width: 100%;
+    white-space: normal;
+    /*текст переносится на др стр если не вмещается */
+    background: $bgcolor;
+    color: $white;
+    word-spacing: 10px;
+    /*увеличивает отступ между словами*/
+
+    .chosenUniversity-info-title {
+        padding: 30px 40px 0 40px;
+    }
+
+    .row-chosenUniversity-info-text {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        text-indent: 40px;
+        text-align: justify;
+        box-sizing: border-box;
+
+        .chosenUniversity-info-text {
+            width: calc(100% - 350px);
+            padding: 30px 40px;
+
+        }
+
+        .chosenUniversity-info-image {
+            width: 350px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+
+            img {
+                width: 250px;
+                height: 250px;
+            }
+
+            p {
+                width: 250px;
+                white-space: normal;
+                padding: 10px;
+                text-align: left;
+                font-size: 12px;
+            }
+        }
+
+    }
+
+
+}
+
+
+.chosenUniversity-comments {
+    position: relative;
+    width: 100%;
+    white-space: normal;
+    /*текст переносится на др стр если не вмещается */
+    background: $bgcolor;
+    color: $white;
+    word-spacing: 10px;/*увеличивает отступ между словами*/
+    .chosenUniversity-comments-title {
+        padding: 30px 40px 0 40px;
+    }
+
+    .row-chosenUniversity-comments-text {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        text-indent: 40px;
+        text-align: justify;
+
+
+        .chosenUniversity-comments-image {
+
+            margin-left: 40px;
+            margin-top: 70px;
+            width: 20%;
+            padding: auto;
+
+
+            img {
+                width: 150px;
+                height: 150px;
+                background-size: cover;
+            }
+
+            p {
+                white-space: normal;
+            }
+        }
+
+        .chosenUniversity-comments-text {
+            padding: 30px 40px;
+            width: 80%;
+        }
+
+    }
+
+}
+
+.row-chosenUniversity-comments-buttons {
+    width: 100%;
+
+    .chosenUniversity-comments-buttons {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 50px;
+    }
+}

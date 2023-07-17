@@ -1,0 +1,833 @@
+@media (min-width: 0px) {
+
+    .container-chosenUniversity {
+        display: flex;
+        box-sizing: border-box;
+
+        .row-chosenUniversity-text {
+            width: 50%;
+            padding-left: 40px;
+
+            /*.chosenUniversity-text1 {
+                
+
+            }*/
+
+           /* .chosenUniversity-text2 {}*/
+
+        }
+
+        .row-chosenUniversity-image {
+            width: 75%;
+            padding: 10px;
+
+            img {
+                border-radius: 10px;
+                width: 100%;
+                height: 100%;
+                padding-bottom: 20px;
+
+            }
+
+
+            /*.chosenUniversity-image {}*/
+
+        }
+
+    }
+
+    .chosenUniversity-info {
+        position: relative;
+        width: 100%;
+        white-space: normal;
+        /*текст переносится на др стр если не вмещается */
+        background: $bgcolor;
+        color: $white;
+        word-spacing: 10px;
+        /*увеличивает отступ между словами*/
+
+        .row-chosenUniversity-info-title {
+            .chosenUniversity-info-title {
+                padding: 30px 40px 0 40px;
+            }
+
+        }
+
+
+        .row-chosenUniversity-info-text {
+
+
+            text-indent: 40px;
+            text-align: justify;
+            box-sizing: border-box;
+            justify-content: center;
+
+            .chosenUniversity-info-text {
+
+                padding: 0px 40px 30px 40px;
+            }
+
+            .chosenUniversity-info-image {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+
+
+                img {
+                    width: 250px;
+                    height: 250px;
+                }
+
+                p {
+                    width: 250px;
+                    white-space: normal;
+                    padding: 10px;
+                    text-align: left;
+                    font-size: 11px;
+                }
+            }
+
+        }
+    }
+
+
+
+
+    .row-chosenUniversity-specialties-info {
+        .chosenUniversity-specialties-info {
+            padding: 30px 40px 0 40px;
+        }
+
+    }
+
+
+    .row-chosenUniversity-specialties-table {
+        padding: 40px 40px 60px 40px;
+
+        .chosenUniversity-specialties-table {
+            .table {
+                font-size: 18px;
+                text-align: left;
+                
+
+
+                .col1table {
+                    padding-right: 30px;
+                    
+                }
+
+                /*.col2table {}*/
+
+                .col1table1 {
+                    padding-right: 30px;
+                }
+
+                /*.col1table2 {}*/
+
+            }
+
+        }
+
+    }
+
+    .chosenUniversity-comments {
+        display: none;
+        position: relative;
+        width: 100%;
+        white-space: normal;
+        /*текст переносится на др стр если не вмещается */
+        background: $bgcolor;
+        color: $white;
+        word-spacing: 10px;
+        /*увеличивает отступ между словами*/
+
+        .row-chosenUniversity-comments-title {
+            .chosenUniversity-comments-title {
+                padding: 30px 40px 0 40px;
+            }
+
+            .row-chosenUniversity-comments-text {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                text-indent: 40px;
+                text-align: justify;
+
+                .chosenUniversity-comments-image {
+                    margin-left: 40px;
+                    margin-top: 70px;
+                    width: 20%;
+                    padding: auto;
+
+                    img {
+                        width: 150px;
+                        height: 150px;
+                        background-size: cover;
+                    }
+
+                    p {
+                        white-space: normal;
+                    }
+                }
+
+                .chosenUniversity-comments-text {
+                    padding: 30px 40px;
+                    width: 80%;
+                }
+
+            }
+        }
+
+        .row-chosenUniversity-comments-buttons {
+            width: 100%;
+
+            .chosenUniversity-comments-buttons {
+
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                padding-bottom: 50px;
+
+                /*.button {
+                    .floating-button {}
+                }*/
+            }
+
+        }
+
+
+
+    }
+
+
+
+    /*.row-chosenUniversity-contacts-title {
+        .chosenUniversity-contacts-title {}
+
+    }
+
+    .row-chosenUniversity-contacts {
+        .chosenUniversity-contacts-phone {}
+
+        .chosenUniversity-contacts-info {
+            .row-chosenUniversity-contacts-info {
+                .chosenUniversity-contacts-phone {}
+
+                .chosenUniversity-contacts-email {}
+
+                .chosenUniversity-contacts-mail {}
+
+            }
+
+        }
+
+    }*/
+
+
+}
+
+@media (min-width: 576px) {
+    /*.container-chosenUniversity {
+        .row-chosenUniversity-text {
+            .chosenUniversity-text1 {}
+
+            .chosenUniversity-text2 {}
+
+        }
+
+        .row-chosenUniversity-image {
+            .chosenUniversity-image {}
+
+        }
+
+    }
+
+
+    .chosenUniversity-info {
+        .row-chosenUniversity-info-title {
+            .chosenUniversity-info-title {}
+
+        }
+
+
+        .row-chosenUniversity-info-text {
+            .chosenUniversity-info-text {}
+
+            .chosenUniversity-info-image {}
+
+        }
+    }
+
+
+    .row-chosenUniversity-specialties-info {
+        .chosenUniversity-specialties-info {}
+
+    }
+
+
+    .row-chosenUniversity-specialties-table {
+        .chosenUniversity-specialties-table {
+            .table {
+                .col1table {}
+
+                .col2table {}
+
+                .col1table1 {}
+
+                .col1table2 {}
+
+            }
+
+        }
+
+    }
+
+    .row-chosenUniversity-comments-title {
+        .chosenUniversity-comments-title {}
+
+        .row-chosenUniversity-comments-text {
+            .chosenUniversity-comments-image {}
+
+            .chosenUniversity-comments-text {}
+
+        }
+    }
+
+    .row-chosenUniversity-comments-buttons {
+        .chosenUniversity-comments-buttons {
+            .button {
+                .floating-button {}
+            }
+        }
+
+    }
+
+    .row-chosenUniversity-contacts-title {
+        .chosenUniversity-contacts-title {}
+
+    }
+
+    .row-chosenUniversity-contacts {
+        .chosenUniversity-contacts-phone {}
+
+        .chosenUniversity-contacts-info {
+            .row-chosenUniversity-contacts-info {
+                .chosenUniversity-contacts-phone {}
+
+                .chosenUniversity-contacts-email {}
+
+                .chosenUniversity-contacts-mail {}
+
+            }
+
+        }
+
+    }*/
+}
+
+@media (min-width: 768px) {
+    .container-chosenUniversity {
+        .row-chosenUniversity-text {
+            padding: 40px 40px 40px 40px;
+
+            /*.chosenUniversity-text1 {}
+
+            .chosenUniversity-text2 {}*/
+
+        }
+
+        /*.row-chosenUniversity-image {
+            .chosenUniversity-image {}
+
+        }*/
+
+    }
+
+
+    /*.chosenUniversity-info {
+        .row-chosenUniversity-info-title {
+            .chosenUniversity-info-title {}
+
+        }
+
+
+        .row-chosenUniversity-info-text {
+            .chosenUniversity-info-text {}
+
+            .chosenUniversity-info-image {}
+
+        }
+    }
+
+
+    .row-chosenUniversity-specialties-info {
+        .chosenUniversity-specialties-info {}
+
+    }
+
+
+    .row-chosenUniversity-specialties-table {
+        .chosenUniversity-specialties-table {
+            .table {
+                .col1table {}
+
+                .col2table {}
+
+                .col1table1 {}
+
+                .col1table2 {}
+
+            }
+
+        }
+
+    }
+
+    .row-chosenUniversity-comments-title {
+        .chosenUniversity-comments-title {}
+
+        .row-chosenUniversity-comments-text {
+            .chosenUniversity-comments-image {}
+
+            .chosenUniversity-comments-text {}
+
+        }
+    }
+
+    .row-chosenUniversity-comments-buttons {
+        .chosenUniversity-comments-buttons {
+            .button {
+                .floating-button {}
+            }
+        }
+
+    }
+
+    .row-chosenUniversity-contacts-title {
+        .chosenUniversity-contacts-title {}
+
+    }
+
+    .row-chosenUniversity-contacts {
+        .chosenUniversity-contacts-phone {}
+
+        .chosenUniversity-contacts-info {
+            .row-chosenUniversity-contacts-info {
+                .chosenUniversity-contacts-phone {}
+
+                .chosenUniversity-contacts-email {}
+
+                .chosenUniversity-contacts-mail {}
+
+            }
+
+        }
+
+    }*/
+}
+
+@media (min-width: 1024px) {
+   /* .container-chosenUniversity {
+        .row-chosenUniversity-text {
+            .chosenUniversity-text1 {}
+
+            .chosenUniversity-text2 {}
+
+        }
+
+        .row-chosenUniversity-image {
+            .chosenUniversity-image {}
+
+        }
+
+    }*/
+
+
+    .chosenUniversity-info {
+       /* .row-chosenUniversity-info-title {
+            .chosenUniversity-info-title {}
+
+        }*/
+
+        .row-chosenUniversity-info-text {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            text-indent: 40px;
+            text-align: justify;
+            box-sizing: border-box;
+
+            .chosenUniversity-info-text {
+                width: calc(100% - 350px);
+                padding: 0px 40px 30px 40px;
+            }
+
+            .chosenUniversity-info-image {
+                width: 350px;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+
+
+                img {
+                    width: 250px;
+                    height: 250px;
+                    padding-bottom: 0px;
+                }
+
+                p {
+                    width: 250px;
+                    white-space: normal;
+                    padding: 10px;
+                    text-align: left;
+                    font-size: 11px;
+                }
+            }
+
+        }
+    }
+
+
+    /*.row-chosenUniversity-specialties-info {
+        .chosenUniversity-specialties-info {}
+
+    }*/
+
+
+   /* .row-chosenUniversity-specialties-table {
+        .chosenUniversity-specialties-table {
+            .table {
+                .col1table {}
+
+                .col2table {}
+
+                .col1table1 {}
+
+                .col1table2 {}
+
+            }
+
+        }
+
+    }*/
+
+    .chosenUniversity-comments {
+        display: block;
+        position: relative;
+        width: 100%;
+        white-space: normal;
+        /*текст переносится на др стр если не вмещается */
+        background: $bgcolor;
+        color: $white;
+        word-spacing: 10px;
+        /*увеличивает отступ между словами*/
+
+        .row-chosenUniversity-comments-title {
+
+            .chosenUniversity-comments-title {
+                padding: 30px 40px 0 40px;
+            }
+        }
+
+        .row-chosenUniversity-comments-text {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            text-indent: 40px;
+            text-align: justify;
+
+            .chosenUniversity-comments-image {
+                margin-left: 40px;
+                margin-top: 50px;
+                width: 20%;
+                padding: auto;
+
+                img {
+                    width: 150px;
+                    height: 150px;
+                    background-size: cover;
+                }
+
+                p {
+                    white-space: normal;
+                }
+            }
+
+            .chosenUniversity-comments-text {
+                padding: 30px 40px;
+                width: 80%;
+            }
+
+        }
+    }
+
+    .row-chosenUniversity-comments-buttons {
+        width: 100%;
+
+        .blog_form1 {
+            width: 50%;
+
+            .mb-31 {
+                width: 100%;
+
+                padding: 10px 40px;
+
+                .form-control1 {
+                    width: 70%;
+                    float: right;
+                    height: 20px;
+                }
+            }
+
+            .mb-313 {
+                padding-top: 20px;
+                display: flex;
+                justify-content: center;
+
+            }
+
+        }
+
+        .chosenUniversity-comments-buttons {
+            justify-content: center;
+
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding-bottom: 50px;
+
+
+
+
+           /* .button {
+                .floating-button {}
+            }*/
+        }
+
+    }
+
+    /*.row-chosenUniversity-contacts-title {
+        .chosenUniversity-contacts-title {}
+
+    }
+
+    .row-chosenUniversity-contacts {
+        .chosenUniversity-contacts-phone {}
+
+        .chosenUniversity-contacts-info {
+            .row-chosenUniversity-contacts-info {
+                .chosenUniversity-contacts-phone {}
+
+                .chosenUniversity-contacts-email {}
+
+                .chosenUniversity-contacts-mail {}
+
+            }
+
+        }
+
+    }*/
+
+
+}
+
+
+
+@media (min-width: 1280px) {
+    /*.container-chosenUniversity {
+        .row-chosenUniversity-text {
+            .chosenUniversity-text1 {}
+
+            .chosenUniversity-text2 {}
+
+        }
+
+        .row-chosenUniversity-image {
+            .chosenUniversity-image {}
+
+        }
+
+    }
+
+
+    .chosenUniversity-info {
+        .row-chosenUniversity-info-title {
+            .chosenUniversity-info-title {}
+
+        }
+
+
+        .row-chosenUniversity-info-text {
+            .chosenUniversity-info-text {}
+
+            .chosenUniversity-info-image {}
+
+        }
+    }
+
+
+    .row-chosenUniversity-specialties-info {
+        .chosenUniversity-specialties-info {}
+
+    }
+
+
+    .row-chosenUniversity-specialties-table {
+        .chosenUniversity-specialties-table {
+            .table {
+                .col1table {}
+
+                .col2table {}
+
+                .col1table1 {}
+
+                .col1table2 {}
+
+            }
+
+        }
+
+    }
+
+    .row-chosenUniversity-comments-title {
+        .chosenUniversity-comments-title {}
+
+        .row-chosenUniversity-comments-text {
+            .chosenUniversity-comments-image {}
+
+            .chosenUniversity-comments-text {}
+
+        }
+    }
+
+    .row-chosenUniversity-comments-buttons {
+        .chosenUniversity-comments-buttons {
+            .button {
+                .floating-button {}
+            }
+        }
+
+    }
+
+    .row-chosenUniversity-contacts-title {
+        .chosenUniversity-contacts-title {}
+
+    }
+
+    .row-chosenUniversity-contacts {
+        .chosenUniversity-contacts-phone {}
+
+        .chosenUniversity-contacts-info {
+            .row-chosenUniversity-contacts-info {
+                .chosenUniversity-contacts-phone {}
+
+                .chosenUniversity-contacts-email {}
+
+                .chosenUniversity-contacts-mail {}
+
+            }
+
+        }
+
+    }*/
+}
+
+@media (min-width: 1920px) {
+    /*.container-chosenUniversity {
+        .row-chosenUniversity-text {
+            .chosenUniversity-text1 {}
+
+            .chosenUniversity-text2 {}
+
+        }
+
+        .row-chosenUniversity-image {
+            .chosenUniversity-image {}
+
+        }
+
+    }
+
+
+    .chosenUniversity-info {
+        .row-chosenUniversity-info-title {
+            .chosenUniversity-info-title {}
+
+        }
+
+
+        .row-chosenUniversity-info-text {
+            .chosenUniversity-info-text {}
+
+            .chosenUniversity-info-image {}
+
+        }
+    }
+
+    .row-chosenUniversity-specialties-info {
+        .chosenUniversity-specialties-info {}
+
+    }
+
+
+    .row-chosenUniversity-specialties-table {
+        .chosenUniversity-specialties-table {
+            .table {
+                .col1table {}
+
+                .col2table {}
+
+                .col1table1 {}
+
+                .col1table2 {}
+
+            }
+
+        }
+
+    }
+
+    .row-chosenUniversity-comments-title {
+        .chosenUniversity-comments-title {}
+
+        .row-chosenUniversity-comments-text {
+            .chosenUniversity-comments-image {}
+
+            .chosenUniversity-comments-text {}
+
+        }
+    }
+
+    .row-chosenUniversity-comments-buttons {
+        .chosenUniversity-comments-buttons {
+            .button {
+                .floating-button {}
+            }
+        }
+
+    }
+
+    .row-chosenUniversity-contacts-title {
+        .chosenUniversity-contacts-title {}
+
+    }
+
+    .row-chosenUniversity-contacts {
+        .chosenUniversity-contacts-phone {}
+
+        .chosenUniversity-contacts-info {
+            .row-chosenUniversity-contacts-info {
+                .chosenUniversity-contacts-phone {}
+
+                .chosenUniversity-contacts-email {}
+
+                .chosenUniversity-contacts-mail {}
+
+            }
+
+        }
+
+    }*/
+}

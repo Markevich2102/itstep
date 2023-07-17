@@ -46,7 +46,7 @@ const FormComment = (props) => {
             
             <div className="mb-3">
 
-                <button type="submit" className="btn btn-primary">Добавить</button>
+                <button type="submit" className="btn btn-primary" onClick={() => { props.history.push(`/listComments`)}}>Добавить</button>
             </div>
         </form>
     </>)

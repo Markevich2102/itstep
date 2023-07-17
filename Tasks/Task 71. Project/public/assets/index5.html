@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fasthand&family=Manrope:wght@300;400&family=Open+Sans:wght@300;500;600&family=Roboto+Slab:wght@100;200;400&family=Roboto:ital@0;1&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-main-menu">
+                <div class="logo">
+                    <img src="./img/logo.png" alt="logo">
+                    <h1> Адукар</h1>
+                </div>
+                <div class="choose-city">
+                    <p> Выбрать город</p>
+                </div>
+                <div class="choose-university">
+                    <p> Выбрать ВУЗ</p>
+                </div>
+                <div class="entrance">
+                    <p> Вход</p>
+                </div>
+            </div>
+
+            <div class="header-secondary-menu">
+                <div class="main-menu">
+                    <ul>
+                        <li><a href="#secondary-menu-main">Главная</a></li>
+                        <li><a href="#university-belarus">ВУЗы Беларуси</a></li>
+                        <li><a href="#speciality">Специальности</a></li>
+                        <li><a href="#selection">Подобрать по ЦЭ (ЦТ)</a></li>
+                        <li><a href="#application">Оставить заявку</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <section class="application">
+        <div class="container">
+            <div class="row-application-text">
+                <div class="application-text">
+                    <h3>Оставь заявку и мы поможем тебе подобрать ВУЗы и специальности.</h3>
+                </div>
+            </div>
+            <div class="row-application-form">
+                <div class="application-form">
+                    <form action="" method="post" name="reg_form" class="reg-form">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-label">
+                                    <label for="FIO">ФИО:</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-control">
+                                    <input type="text" name="FIO" id="FIO" value="" placeholder="Введите ФИО">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-label">
+                                    <label for="email">Email:</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-control">
+                                    <input type="text" name="email" id="email" value="" placeholder="Введите Email">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-label">
+                                    <label for="phone">Телефон:</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-control">
+                                    <input type="text" name="phone" id="phone" value="" placeholder="Введите телефон"
+                                        readonly>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-label">
+                                    <label>Город в котором хотели бы учиться:</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-control">
+                                    <div class="form-control-check">
+                                        <input type="checkbox" name="city[]" id="city-1" value="city-1"><label
+                                            for="city-1">Минск</label>
+                                    </div>
+                                    <div class="form-control-check">
+                                        <input type="checkbox" name="city[]" id="city-2" value="city-2"><label
+                                            for="city-2">Гомель</label>
+                                    </div>
+                                    <div class="form-control-check">
+                                        <input type="checkbox" name="city[]" id="city-3" value="city-3"><label
+                                            for="city-3">Гродно</label>
+                                    </div>
+                                    <div class="form-control-check">
+                                        <input type="checkbox" name="city[]" id="city-4" value="city-4"><label
+                                            for="city-4">Брест</label>
+                                    </div>
+                                    <div class="form-control-check">
+                                        <input type="checkbox" name="city[]" id="city-5" value="city-5"><label
+                                            for="city-5">Витебск</label>
+                                    </div>
+                                    <div class="form-control-check">
+                                        <input type="checkbox" name="city[]" id="city-6" value="city-6"><label
+                                            for="city-6">Могилёв</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-label">
+                                    <label>Вступительные испытания:</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-control">
+                                    <div class="form-control-check">
+                                        <input type="checkbox" name="entranceTests[]" id="entranceTests-1" value="entranceTests-1"><label for="entranceTests-1">Математика</label>
+                                    </div>
+                                    <div class="form-control-check">
+                                        <input type="checkbox" name="entranceTests[]" id="entranceTests-2" value="entranceTests-2"><label
+                                            for="entranceTests-2">Русский язык/Белорусский язык</label>
+                                    </div>
+                                    <div class="form-control-check">
+                                        <input type="checkbox" name="entranceTests[]" id="entranceTests-3" value="entranceTests-3"><label
+                                            for="entranceTests-3">Обществоведение</label>
+                                    </div>
+                                    <div class="form-control-check">
+                                        <input type="checkbox" name="entranceTests[]" id="entranceTests-4" value="entranceTests-4"><label
+                                            for="entranceTests-4">Физика</label>
+                                    </div>
+                                    <div class="form-control-check">
+                                        <input type="checkbox" name="entranceTests[]" id="entranceTests-5" value="entranceTests-5"><label
+                                            for="entranceTests-5">Информатика</label>
+                                    </div>
+                                    <div class="form-control-check">
+                                        <input type="checkbox" name="entranceTests[]" id="entranceTests-6" value="entranceTests-6"><label
+                                            for="entranceTests-6">Химия</label>
+                                    </div>
+                                    <div class="form-control-check">
+                                        <input type="checkbox" name="entranceTests[]" id="entranceTests-7" value="entranceTests-7"><label
+                                            for="entranceTests-7">Иностранный язык</label>
+                                    </div>
+                                    <div class="form-control-check">
+                                        <input type="checkbox" name="entranceTests[]" id="entranceTests-8" value="entranceTests-8"><label
+                                            for="entranceTests-8">История Беларуси</label>
+                                    </div>
+                                    <div class="form-control-check">
+                                        <input type="checkbox" name="entranceTests[]" id="entranceTests-9" value="entranceTests-9"><label
+                                            for="entranceTests-9">Биология</label>
+                                    </div>         
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-label">
+                                    <label>Университеты:</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-control">
+                                    <div class="form-control-check">
+                                        <input type="checkbox" name="university[]" id="university-1"
+                                            value="university-1"><label for="university-1">Минский
+                                            государственный
+                                            лингвистический университет</label>
+                                    </div>
+                                    <div class="form-control-check">
+                                        <input type="checkbox" name="university[]" id="university-2"
+                                            value="university-2"><label for="university-2">Белорусский государственный университет</label>
+                                    </div>
+                                    <div class="form-control-check">
+                                        <input type="checkbox" name="university[]" id="university-3"
+                                            value="university-3"><label for="university-3">Белорусский государственный медицинский университет</label>
+                                    </div>
+                                    <div class="form-control-check">
+                                        <input type="checkbox" name="university[]" id="university-4"
+                                            value="university-4"><label for="university-4">Белорусский государственный университет информатики и радиоэлектроники</label>
+                                    </div>
+                                    <div class="form-control-check">
+                                        <input type="checkbox" name="university[]" id="university-5"
+                                            value="university-5"><label for="university-5">Белорусский государственный экономический университет</label>
+                                    </div>
+                                    <div class="form-control-check">
+                                        <input type="checkbox" name="university[]" id="university-6"
+                                            value="university-6"><label for="university-6">Белорусский национальный технический университет</label>
+                                    </div>
+                                    <div class="form-control-check">
+                                        <input type="checkbox" name="university[]" id="university-7"
+                                            value="university-7"><label for="university-7">Белорусский государственный технологический университет</label>
+                                    </div>
+                                    <div class="form-control-check">
+                                        <input type="checkbox" name="university[]" id="university-8"
+                                            value="university-8"><label for="university-8">Гомельский государственный университет имени Франциска Скорины</label>
+                                    </div>
+                                    <div class="form-control-check">
+                                        <input type="checkbox" name="university[]" id="university-9"
+                                            value="university-9"><label for="university-9">Гомельский государственный медицинский университет</label>
+                                    </div>
+                                    <div class="form-control-check">
+                                        <input type="checkbox" name="university[]" id="university-10"
+                                            value="university-10"><label for="university-10">Гомельский государственный технический университет имени П.О. Сухого</label>
+                                    </div>
+                                    <div class="form-control-check">
+                                        <input type="checkbox" name="university[]" id="university-11"
+                                            value="university-11"><label for="university-11">Гродненский государственный университет имени Янки Купалы</label>
+                                    </div>
+                                    <div class="form-control-check">
+                                        <input type="checkbox" name="university[]" id="university-12"
+                                            value="university-12"><label for="university-12">Гродненский государственный медицинский университет</label>
+                                    </div>
+                                    <div class="form-control-check">
+                                        <input type="checkbox" name="university[]" id="university-13"
+                                            value="university-13"><label for="university-13">Брестский государственный технический университет</label>
+                                    </div>
+                                    <div class="form-control-check">
+                                        <input type="checkbox" name="university[]" id="university-14"
+                                            value="university-14"><label for="university-14">Брестский государственный университет имени А.С. Пушкина</label>
+                                    </div>
+                                    <div class="form-control-check">
+                                        <input type="checkbox" name="university[]" id="university-15"
+                                            value="university-15"><label for="university-15">Витебский государственный ордена Дружбы Народов медицинский университет</label>
+                                    </div>
+                                    <div class="form-control-check">
+                                        <input type="checkbox" name="university[]" id="university-16"
+                                            value="university-16"><label for="university-16">Витебский государственный технологический университет</label>
+                                    </div>
+                                    <div class="form-control-check">
+                                        <input type="checkbox" name="university[]" id="university-17"
+                                            value="university-17"><label for="university-17">Витебский государственный университет имени П.М. Машерова</label>
+                                    </div>
+                                    <div class="form-control-check">
+                                        <input type="checkbox" name="university[]" id="university-18"
+                                            value="university-18"><label for="university-18">Могилёвский государственный университет имени А.А. Кулешова</label>
+                                    </div>
+                                    <div class="form-control-check">
+                                        <input type="checkbox" name="university[]" id="university-19"
+                                            value="university-19"><label for="university-19">Могилёвский институт Министерства внутренних дел Республики Беларусь</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-control">
+                                    <button>Отправить</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="info">
+        <div class="container">
+            <div class="row-info-text">
+                <div class="info-text">
+                    <h2>Высшие учебные заведения</h2>
+                </div>
+            </div>
+            <div class="row-info-university">
+                <div class="university">
+                    <!--a href="/university/1" class="catalog-item">
+                        <span
+                            style="background-image: url(./img/Минск/МГЛУ/fasad-mslu-1.jpg)"
+                            class="catalog-item__main"><span class="catalog-item__name">МГЛУ</span><span
+                                class="catalog-item__overlay"></span></span><span class="catalog-item__desc">Минский
+                            государственный
+                            лингвистический университет</span></a-->
+                    <div class="row-university-image">
+                        <div class="university-image">
+                            <img src="./img/Минск/МГЛУ/fasad-mslu-1.jpg" alt="Минский
+                            государственный
+                            лингвистический университет">
+                        </div>
+                        <div class="university-image-text">
+                            <a href="#" class="mgly">
+                                <p>Минский
+                                    государственный
+                                    лингвистический университет</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="university">
+                    <div class="row-university-image">
+                        <div class="university-image">
+                            <img src="./img/Минск/БГУ/bsu-zaglavnoe.jpg" alt="Белорусский государственный университет">
+                        </div>
+                        <div class="university-image-text">
+                            <a href="#" class="bgy">
+                                <p>Белорусский государственный университет</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="university">
+                    <div class="row-university-image">
+                        <div class="university-image">
+                            <img src="./img/Минск/БГМУ/bgmu_fasad.jpg"
+                                alt="Белорусский государственный медицинский университет">
+                        </div>
+                        <div class="university-image-text">
+                            <a href="#" class="bgmy">
+                                <p>Белорусский государственный медицинский университет</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="university">
+                    <div class="row-university-image">
+                        <div class="university-image">
+                            <img src="./img/Минск/БГУИР/fasad-bsuir-1.jpg"
+                                alt="Белорусский государственный университет информатики и радиоэлектроники">
+                        </div>
+                        <div class="university-image-text">
+                            <a href="#" class="bgyur">
+                                <p>Белорусский государственный университет информатики и радиоэлектроники</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="university">
+                    <div class="row-university-image">
+                        <div class="university-image">
+                            <img src="./img/Минск/БГЭУ/fasad-bgeu-1-s.jpg"
+                                alt="Белорусский государственный экономический университет">
+                        </div>
+                        <div class="university-image-text">
+                            <a href="#" class="bgey">
+                                <p>Белорусский государственный экономический университет</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="university">
+                    <div class="row-university-image">
+                        <div class="university-image">
+                            <img src="./img/Минск/БНТУ/bntu-fasad-2019-1.jpg"
+                                alt="Белорусский национальный технический университет">
+                        </div>
+                        <div class="university-image-text">
+                            <a href="#" class="bnty">
+                                <p>Белорусский национальный технический университет</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="university">
+                    <div class="row-university-image">
+                        <div class="university-image">
+                            <img src="./img/Минск/БГТУ/fasad-bstu-1.jpg"
+                                alt="Белорусский государственный технологический университет ">
+                        </div>
+                        <div class="university-image-text">
+                            <a href="#" class="bgty">
+                                <p>Белорусский государственный технологический университет</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="university">
+                    <div class="row-university-image">
+                        <div class="university-image">
+                            <img src="./img/Гомель/ГГУим.Ф.Скорины/fasad-gsu-1.jpg"
+                                alt="Гомельский государственный университет имени Франциска Скорины">
+                        </div>
+                        <div class="university-image-text">
+                            <a href="#" class="ggy">
+                                <p>Гомельский государственный университет имени Франциска Скорины</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="university">
+                    <div class="row-university-image">
+                        <div class="university-image">
+                            <img src="./img/Гомель/ГГМУ/fasad-gsmu-1.jpg
+                            " alt="Гомельский государственный медицинский университет">
+                        </div>
+                        <div class="university-image-text">
+                            <a href="#" class="ggmy">
+                                <p>Гомельский государственный медицинский университет</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="university">
+                    <div class="row-university-image">
+                        <div class="university-image">
+                            <img src="./img/Гомель/ГГТУ/fasad-ggtu-1.jpg"
+                                alt="Гомельский государственный технический университет имени П.О. Сухого">
+                        </div>
+                        <div class="university-image-text">
+                            <a href="#" class="ggty">
+                                <p>Гомельский государственный технический университет имени П.О. Сухого</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="university">
+                    <div class="row-university-image">
+                        <div class="university-image">
+                            <img src="./img/Гродно/ГрТУ/grgu-fasad-1.jpg"
+                                alt="Гродненский государственный университет имени Янки Купалы">
+                        </div>
+                        <div class="university-image-text">
+                            <a href="#" class="grgy">
+                                <p>Гродненский государственный университет имени Янки Купалы</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="university">
+                    <div class="row-university-image">
+                        <div class="university-image">
+                            <img src="./img/Гродно/ГрГМУ/foto-fasad-grgmu-2.jpg"
+                                alt="Гродненский государственный медицинский университет">
+                        </div>
+                        <div class="university-image-text">
+                            <a href="#" class="grgmy">
+                                <p>Гродненский государственный медицинский университет</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="university">
+                    <div class="row-university-image">
+                        <div class="university-image">
+                            <img src="./img/Брест/БрГТУ/fasad-brgtu-1.jpg"
+                                alt="Брестский государственный технический университет">
+                        </div>
+                        <div class="university-image-text">
+                            <a href="#" class="brgty">
+                                <p>Брестский государственный технический университет</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="university">
+                    <div class="row-university-image">
+                        <div class="university-image">
+                            <img src="./img/Брест/БГУим.Пушкина/fasad-brsu-1.jpg"
+                                alt="Брестский государственный университет имени А.С. Пушкина">
+                        </div>
+                        <div class="university-image-text">
+                            <a href="#" class="bgyb">
+                                <p>Брестский государственный университет имени А.С. Пушкина</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="university">
+                    <div class="row-university-image">
+                        <div class="university-image">
+                            <img src="./img/Витебск/ВГМУ/fasad-vsmu-1.jpg"
+                                alt="Витебский государственный ордена Дружбы Народов медицинский университет">
+                        </div>
+                        <div class="university-image-text">
+                            <a href="#" class="vgmy">
+                                <p>Витебский государственный ордена Дружбы Народов медицинский университет</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="university">
+                    <div class="row-university-image">
+                        <div class="university-image">
+                            <img src="./img/Витебск/ВГТУ/bgtu-22-fasad-1.jpg"
+                                alt="Витебский государственный технологический университет">
+                        </div>
+                        <div class="university-image-text">
+                            <a href="#" class="vgty">
+                                <p>Витебский государственный технологический университет</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="university">
+                    <div class="row-university-image">
+                        <div class="university-image">
+                            <img src="./img/Витебск/ВГУ/vgu-grande-1.jpg"
+                                alt="Витебский государственный университет имени П.М. Машерова">
+                        </div>
+                        <div class="university-image-text">
+                            <a href="#" class="vgy">
+                                <p>Витебский государственный университет имени <br>П.М. Машерова</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="university">
+                    <div class="row-university-image">
+                        <div class="university-image">
+                            <img src="./img/Могилёв/МГУ/fasad-msu-1.jpg"
+                                alt="Могилёвский государственный университет имени А.А. Кулешова">
+                        </div>
+                        <div class="university-image-text">
+                            <a href="#" class="mgy">
+                                <p>Могилёвский государственный университет имени <br>А.А. Кулешова</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="university">
+                    <div class="row-university-image">
+                        <div class="university-image">
+                            <img src="./img/Могилёв/МИ.МВД/mmvd-1.jpg"
+                                alt="Могилёвский институт Министерства внутренних дел Республики Беларусь">
+                        </div>
+                        <div class="university-image-text">
+                            <a href="#" class="mymvd">
+                                <p>Могилёвский институт Министерства внутренних дел Республики Беларусь</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="contents">
+        <div class="container">
+
+        </div>
+    </section>
+
+
+
+
+    <footer>
+        <div class="container">
+            <div class="row-footer">
+                <div class="footer-logo">
+                    <img src="./img/logo.png" alt="logo">
+                    <h3> Адукар</h3>
+                </div>
+                <div class="project">
+                    <div class="row-project">
+                        <div class="project-list">
+                            <ul>
+                                <li><a href="#">О проекте</a></li>
+                                <li><a href="#">ВУЗы Беларуси</a></li>
+                                <li><a href="#">Специальности</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-footer">
+                    <div class="row-contact-logo">
+                        <div class="contact-logo">
+                            <ul>
+                                <li><a href="https://vk.com/adukar" class="vk"><img src="../assets/img/vk.png"
+                                            alt="vk"></a></li>
+                                <li><a href="https://www.facebook.com/adukarofficial/" class="fb"><img
+                                            src="../assets/img/facebook.png" alt="facebook" class="facebook"></a></li>
+                                <li><a href="https://www.youtube.com/channel/UCQHBkteJfKQmcVqUacaf9-w" class="yt"><img
+                                            src="../assets/img/youtube.png" alt="youtube"></a></li>
+                                <li><a href="https://t.me/adukarby" class="tg"><img src="../assets/img/telegram.png"
+                                            alt="telegram"></a></li>
+                                <li><a href="https://www.instagram.com/adukarby/" class="ig"><img
+                                            src="../assets/img/instagram1.png" alt="instagram" class="instagram"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-copyrigt">
+                <div class="copyrigt">
+                    <p>© Адукар 2023</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

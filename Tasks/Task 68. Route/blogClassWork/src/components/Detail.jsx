@@ -11,6 +11,7 @@ const Detail = (props) => {
     // props.match.params.id - id, который передается в адресе
 
     const post = props.posts.find((post) => post.id == routeParams.id);
+    
 
    
 

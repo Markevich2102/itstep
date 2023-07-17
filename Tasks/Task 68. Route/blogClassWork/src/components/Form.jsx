@@ -18,7 +18,7 @@ const Form = (props) => {
             text: "",
             image: "no-image.png",
         });
-        props.history.push("/product/")
+        props.history.push("/post/")
     }
 
     function handleTitleChange(event) {

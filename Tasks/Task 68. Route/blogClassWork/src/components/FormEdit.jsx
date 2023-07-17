@@ -24,7 +24,7 @@ const FormEdit = (props) => {
             text: "",
             image: "no-image.png",
         });
-        props.history.push("/product/")//редирект
+        props.history.push("/post/")//редирект
     }
 
     function handleTitleChange(event) {
@@ -58,7 +58,7 @@ const FormEdit = (props) => {
             </div>
             <div className="mb-3">
                 <button type="submit" className="btn btn-primary">Сохранить</button>
-                <button type="button" className="btn btn-secondary" onClick={() => { props.history.push("/product/") }}>Отмена</button>
+                <button type="button" className="btn btn-secondary" onClick={() => { props.history.push("/post/") }}>Отмена</button>
             </div>
         </form>
     </>)

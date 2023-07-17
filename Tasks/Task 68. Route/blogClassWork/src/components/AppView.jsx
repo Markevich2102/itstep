@@ -7,6 +7,7 @@ const Detail = require("./Detail.jsx");
 const Header = require("./Header.jsx");
 const FormEdit = require("./FormEdit.jsx");
 const FormComment = require("./FormComment.jsx");
+const ListComments = require("./ListComments.jsx");
 
 const AppView = (props) => {
 
@@ -14,11 +15,12 @@ const AppView = (props) => {
         <Header />
         <Switch>
             <Route exact path="/" component={UserInfo} />
-            <Route path="/product/add" component={Form} />
-            <Route path="/product/edit/:id" component={FormEdit} />{/*пишем в первую очередь*/}
-            <Route path="/product/comment/:id" component={FormComment} />{/*пишем в первую очередь*/}
-            <Route path="/product/:id" component={Detail} /> {/*:id - параметр адреса*/}
-            <Route path="/product/" component={List} />
+            <Route path="/post/add" component={Form} />
+            <Route path="/post/edit/:id" component={FormEdit} />{/*пишем в первую очередь*/}
+            <Route path="/post/comment/:id" component={FormComment} />{/*пишем в первую очередь*/}
+            <Route path="/listComments" component={ListComments} />{/*пишем в первую очередь*/}
+            <Route path="/post/:id" component={Detail} /> {/*:id - параметр адреса*/}
+            <Route path="/post/" component={List} />
 
         </Switch>
     

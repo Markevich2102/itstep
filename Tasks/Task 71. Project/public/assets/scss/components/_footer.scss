@@ -1,0 +1,364 @@
+footer {
+    background: $bgcolor;
+    font-weight: bold;
+    /*увеличивает жирность текста */
+    color: $white;
+    font-size: 18px;
+    text-align: center;
+}
+
+@media (min-width: 0px) {
+    .row-footer {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        top: 0px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 70px;
+
+        .footer-logo {
+            width: 50%;
+            display: flex;
+
+            img {
+                padding-top: 22px;
+                padding-right: 7px;
+                width: 30px;
+                height: 30px;
+            }
+        }
+
+        .project {
+            width: 40%;
+            padding: 10px 0;
+
+            .row-project {
+                width: 100%;
+
+                .project-list {
+                    width: 100%;
+
+                    ul {
+
+                        li {
+                            text-align: left;
+                            padding: 5px 0;
+
+                            a {
+                                color: $white;
+                                font-weight: normal;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .contact-footer {
+            position: relative;
+            display: flex;
+            width: 30%;
+            box-sizing: border-box;
+            align-items: center;
+            padding: 5px;
+
+            .row-contact-logo {
+                width: 100%;
+                padding: 5px;
+
+                .contact-logo {
+                    width: 100%;
+                    padding: 5px;
+
+                    ul {
+                        display: flex;
+                        /*в строку выстраивает*/
+                        justify-content: center;
+                        box-sizing: border-box;
+
+                        /*flex-wrap: wrap;*/
+                        /*переноситна другую стр если не помещается */
+                        /*display: flex;
+                                        list-style: none;
+                                        margin: 0;
+                                        padding: 0;
+                                        align-items: center;
+                                        width: 558px;*/
+                        li {
+                            display: flex;
+                            /*height: 90px;
+                                                padding: 0 20px;*/
+                            align-items: center;
+                            width: 25%;
+                            padding: 5px;
+
+                            a {
+
+                                img {
+                                    width: 40px;
+                                    height: 40px;
+                                }
+
+                                .instagram {
+                                    border-radius: 10px;
+                                }
+
+                                .facebook {
+                                    width: 47px;
+                                    height: 47px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media (min-width: 576px) {
+    .row-footer {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        top: 0px;
+        width: 100%;
+        box-sizing: border-box;
+      
+
+        .footer-logo {
+            width: 50%;
+            display: flex;
+
+            img {
+                padding-top: 25px;
+                padding-right: 7px;
+                width: 30px;
+                height: 30px;
+            }
+        }
+
+        .project {
+            width: 50%;
+            padding: 10px 0;
+
+            .row-project {
+                width: 100%;
+
+                .project-list {
+                    width: 100%;
+
+                    ul {
+
+                        li {
+                            text-align: left;
+                            padding: 5px 0;
+
+                            a {
+                                color: $white;
+                                font-weight: normal;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .contact-footer {
+            position: relative;
+            display: flex;
+            width: 100%;
+            box-sizing: border-box;
+            align-items: center;
+            padding: 5px;
+
+            .row-contact-logo {
+                width: 100%;
+                padding: 5px;
+
+                .contact-logo {
+                    width: 100%;
+                    padding: 5px;
+                    ul {
+                            display: flex;
+                            /*в строку выстраивает*/
+                            justify-content: center;
+                            box-sizing: border-box;
+                    
+                            /*flex-wrap: wrap;*/
+                            /*переноситна другую стр если не помещается */
+                            /*display: flex;
+                                        list-style: none;
+                                        margin: 0;
+                                        padding: 0;
+                                        align-items: center;
+                                        width: 558px;*/
+                            li {
+                                display: flex;
+                                /*height: 90px;
+                                                padding: 0 20px;*/
+                                align-items: center;
+                                width: 25%;
+                                padding: 5px;
+                    
+                                a {
+                    
+                                    img {
+                                        width: 40px;
+                                        height: 40px;
+                                    }
+                    
+                                    .instagram {
+                                        border-radius: 10px;
+                                    }
+                    
+                                    .facebook {
+                                        width: 47px;
+                                        height: 47px;
+                                    }
+                                }
+                            }
+                        }
+                }
+            }
+        }
+
+    }
+}
+
+@media (min-width: 768px) {
+    .row-footer {
+        padding: 0 70px;
+
+        .footer-logo {
+            width: 30%;
+        }
+
+        .project {
+            width: 30%;
+            
+        }
+
+        .contact-footer {
+            width: 40%;
+           
+        }
+
+    }
+}
+
+@media (min-width: 1024px) {
+    .row-footer {
+
+        .footer-logo {
+            width: 30%;
+        }
+
+        .project {
+            width: 30%;
+           
+        }
+
+        .contact-footer {
+            width: 40%;
+            
+        }
+
+    }
+}
+
+@media (min-width: 1280px) {
+    .row-footer {
+
+        .footer-logo {
+            width: 40%;
+        }
+
+        .project {
+            width: 30%;
+           
+        }
+
+        .contact-footer {
+            width: 30%;
+           
+        }
+
+    }
+}
+
+@media (min-width: 1920px) {
+    .row-footer {
+
+        .footer-logo {
+            width: 40%;
+        }
+
+        .project {
+            width: 35%;
+            
+        }
+
+        .contact-footer {
+            width: 25%;
+            
+        }
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.row-copyrigt {
+    padding: 2px 0;
+    font-weight: normal;
+    /*уменьшает жирность текста */
+    color: $bgultramarine;
+}

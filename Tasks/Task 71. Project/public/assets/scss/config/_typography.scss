@@ -1,0 +1,41 @@
+$white: #FFFFFF;
+$black: #000;
+$red: #F6523C;
+/*$bgcoloruniversity: rgb(255, 245, 173);*/
+$bgcoloruniversity: rgb(193, 230, 240);
+$bgcolor: #140342;
+$bgultramarine: #6440fb;
+$beige:#e9aa77;
+$blue: #63dde6;
+$b:#12b8b8;
+
+
+
+
+html,
+body {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    /*text-align: center;*/
+word-spacing: 5px;
+    /*увеличивает отступ между словами*/
+}
+
+h1 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 50px;
+    color: $white;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 22px;
+}

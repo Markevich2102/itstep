@@ -1,0 +1,33 @@
+.chosenSpecialty, .chosenSpecialty-text {
+    position: relative;
+
+    padding: 40px;
+
+    /*align-items: center;/*
+    /*background: $gray;*/
+    /*color: $black;*/
+    white-space: normal;
+    /*текст переносится на др стр если не вмещается */
+    //background: $bgcolor;
+    font-weight: normal;
+    //color: $white;
+    text-align: justify;
+    word-spacing: 10px;
+    text-indent: 40px;
+    /*увеличивает отступ между словами*/
+
+    //display: inline-block;
+    /*background-image: url(./../../img/thumb.jpg);*/
+    /*background-repeat: no-repeat;*/
+    /*background: url(../../img/thumb.jpg);*/
+    background-size: contain;
+    .chosenSpecialty-text2{
+        text-align: left;
+
+    }
+
+
+   
+
+}
+
