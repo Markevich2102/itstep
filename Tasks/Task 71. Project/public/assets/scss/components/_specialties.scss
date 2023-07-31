@@ -1,51 +1,30 @@
 .listSpecialties {
     position: relative;
-
     padding: 40px;
-
-    /*align-items: center;/*
-    /*background: $gray;*/
-    /*color: $black;*/
     white-space: normal;
     /*текст переносится на др стр если не вмещается */
-    //background: $bgcolor;
     font-weight: normal;
-    //color: $white;
     text-align: justify;
     word-spacing: 10px;
     text-indent: 40px;
     /*увеличивает отступ между словами*/
-
-    //display: inline-block;
-    /*background-image: url(./../../img/thumb.jpg);*/
-    /*background-repeat: no-repeat;*/
-    /*background: url(../../img/thumb.jpg);*/
     background-size: contain;
 
-.table {
+    .table {
         font-size: 18px;
         text-align: left;
 
-
-
         .col1table {
             padding-right: 30px;
-
         }
-
-        /*.col2table {}*/
 
         .col1table1 {
             padding-right: 30px;
         }
-
-        /*.col1table2 {}*/
-
     }
-
 }
-.hoverred:hover{
+
+.hoverred:hover {
     color: $red;
     background-color: rgb(230, 230, 230);
-
 }

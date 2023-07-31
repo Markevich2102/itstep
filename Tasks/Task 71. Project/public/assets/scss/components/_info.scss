@@ -11,9 +11,6 @@
         width: 300px;
         height: 300px;
         padding: 10px;
-       /* transform: scale(1.05);*/
-
-        
 
         .row-university-image {
             background-color: $bgcoloruniversity;
@@ -23,15 +20,7 @@
                 width: 300px;
                 height: 200px;
                 border-radius: 10px;
-                /*transform: scale(1.05);*/
-                /*background-size: cover;*/
-                
-                
-
             }
-            /*.university-image:hover{
-                transform: scale(1.05);
-            }*/
 
             .university-image-text {
 
@@ -43,7 +32,6 @@
                 p {
                     color: $black;
                 }
-
             }
 
             .university-image-text:hover {

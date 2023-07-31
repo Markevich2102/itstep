@@ -1,10 +1,8 @@
 const React = require("react");
-
-
 const connect = require("react-redux").connect;
 
 
-const Project = (props) => { //props.user
+const Project = (props) => { 
 
     return <>
         <section className="project2">
@@ -26,7 +24,6 @@ const Project = (props) => { //props.user
             </div>
         </section>
 
-
         <section className="project-image">
             <div className="container project-image1 ">
                 <img src={`/public/assets/img/onas-22-6.jpg`} alt="" />
@@ -38,14 +35,11 @@ const Project = (props) => { //props.user
                     alt="" />
             </div>
         </section>
-
     </>
 }
 
 const mapStateToProps = state => {
-    return {
-
-    }
+    return {}
 };
 
 const mapDispatchToProps = dispatch => ({});

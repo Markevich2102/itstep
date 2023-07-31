@@ -1,45 +1,27 @@
 .regform {
     position: relative;
     width: 100%;
-    /*align-items: center;/*
-    /*background: $gray;*/
-    /*color: $black;*/
     white-space: normal;
     /*текст переносится на др стр если не вмещается */
-
     color: $white;
     text-align: center;
     word-spacing: 10px;
     /*увеличивает отступ между словами*/
-
     display: inline-block;
-    /*background-image: url(./../../img/thumb.jpg);*/
-    /*background-repeat: no-repeat;*/
-    /*background: url(../../img/thumb.jpg);*/
     background-size: contain;
 
-    /*z-index: 9;*/
-    /*когда накадываются элементы друг на друга */
     .application-text {
         padding: 30px 100px;
         background: $bgcolor;
-
     }
 
     .row-application-form {
 
         position: relative;
-        /*float: left;*/
         display: flex;
         justify-content: center;
         box-sizing: border-box;
-
-        /*justify-content: center;*/
-        /*display: flex;
-        flex-wrap: wrap;*/
         color: $black;
-        /*width: 100%;
-        padding: 40px 0;*/
 
         .application-form {
             display: flex;
@@ -48,19 +30,14 @@
             width: 500px;
             margin: 0 auto;
             padding: 50px 0;
-            /*float: none;
-            background: #fff;*/
-
         }
     }
-
 }
+
 .redcolor {
     color: $red;
     font-size: 13px;
 }
-
-
 
 .application-form:after,
 .application-form:before,
@@ -137,57 +114,6 @@
 
 @media (min-width: 768px) {
 
-
-
-
-   /* .col-md-1 {
-        width: 8.33333%;
-    }
-
-    .col-md-2 {
-        width: 16.66666%;
-    }
-
-    .col-md-3 {
-        width: 25%;
-    }
-
-    .col-md-4 {
-        width: 33.33333%;
-    }
-
-    .col-md-5 {
-        width: 41.66666%;
-    }
-
-    .col-md-6 {
-        width: 50%;
-    }
-
-    .col-md-7 {
-        width: 58.33333%;
-    }
-
-    .col-md-8 {
-        width: 66.66666%;
-    }
-
-    .col-md-9 {
-        width: 75%;
-    }
-
-    .col-md-10 {
-        width: 83.33333%;
-    }
-
-    .col-md-11 {
-        width: 91.66666%;
-    }
-
-    .col-md-12 {
-        width: 100%;
-    }*/
-
     .col-md-1,
     .col-md-2,
     .col-md-3,
@@ -206,54 +132,6 @@
 }
 
 @media (min-width: 1200px) {
-
-   /* .col-lg-1 {
-        width: 8.33333%;
-    }
-
-    .col-lg-2 {
-        width: 16.66666%;
-    }
-
-    .col-lg-3 {
-        width: 25%;
-    }
-
-    .col-lg-4 {
-        width: 33.33333%;
-    }
-
-    .col-lg-5 {
-        width: 41.66666%;
-    }
-
-    .col-lg-6 {
-        width: 50%;
-    }
-
-    .col-lg-7 {
-        width: 58.33333%;
-    }
-
-    .col-lg-8 {
-        width: 66.66666%;
-    }
-
-    .col-lg-9 {
-        width: 75%;
-    }
-
-    .col-lg-10 {
-        width: 83.33333%;
-    }
-
-    .col-lg-11 {
-        width: 91.66666%;
-    }
-
-    .col-lg-12 {
-        width: 100%;
-    }*/
 
     .col-lg-1,
     .col-lg-2,
@@ -277,10 +155,7 @@
     float: left;
     width: 100%;
     background: #f3f3f3;
-    //border-radius: 10px;
-    //box-shadow: 2px 2px 6px rgb(0 0 0 / 50%);
-border: thick double #cee8f3;
-    //border: 1px $blue;
+    border: thick double #cee8f3;
     box-sizing: border-box;
 }
 
@@ -289,11 +164,9 @@ border: thick double #cee8f3;
     padding: 15px 15px;
 }
 
-
-
 .form-control {
     padding: 10px 15px;
- 
+
 }
 
 .form-control-check,

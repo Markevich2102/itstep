@@ -1,25 +1,15 @@
 .choiceSpecialties {
     position: relative;
     width: 100%;
-    /*align-items: center;/*
-    /*background: $gray;*/
-    /*color: $black;*/
     white-space: normal;
     /*текст переносится на др стр если не вмещается */
-
     color: $white;
     text-align: center;
     word-spacing: 10px;
     /*увеличивает отступ между словами*/
-
     display: inline-block;
-    /*background-image: url(./../../img/thumb.jpg);*/
-    /*background-repeat: no-repeat;*/
-    /*background: url(../../img/thumb.jpg);*/
     background-size: contain;
 
-    /*z-index: 9;*/
-    /*когда накадываются элементы друг на друга */
     .choiceSpecialties-text {
         padding: 30px 100px;
         background: $bgcolor;
@@ -27,16 +17,12 @@
         .bg {
             color: $beige;
             padding-bottom: 20px;
-
         }
-
     }
 
     .row-choiceSpecialties-items {
 
         justify-content: center;
-        /*display: flex;
-        flex-wrap: wrap;*/
         color: $black;
         width: 100%;
         padding: 40px 0;
@@ -46,7 +32,6 @@
             justify-content: center;
             margin-bottom: 30px;
             box-sizing: border-box;
-
         }
 
         .filter-items-button {
@@ -58,16 +43,14 @@
             padding: 30px 20px;
             border-radius: 1px 10px;
             font-weight: bold;
-            margin-right: 25px; 
-            input{
+            margin-right: 25px;
+
+            input {
                 display: none;
             }
-           
-
-
 
             .filter-items-button__input {
-               
+
                 text-decoration: none;
                 display: inline-block;
                 height: 30px;
@@ -82,9 +65,10 @@
                 background: white;
                 box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
                 transition: .3s;
+
                 input {
-                        display: none;
-                    }
+                    display: none;
+                }
 
             }
 
@@ -103,26 +87,18 @@
                     color: $red;
                 }
             }
-
         }
     }
 
     .row-choiceSpecialties-button {
         width: 100%;
 
-
-
         .choiceSpecialties-button {
             width: 100%;
-
 
             .shine-button {
                 align-items: center;
             }
         }
-
     }
-
-
-
 }

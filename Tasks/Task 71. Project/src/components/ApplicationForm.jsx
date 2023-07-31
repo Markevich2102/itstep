@@ -22,7 +22,7 @@ const ApplicationForm = (props) => {
         item1: "",
         item2: "",
         item3: ""
-    }); 
+    });
 
     function handleFormSubmit(event) {
         event.preventDefault();
@@ -40,9 +40,6 @@ const ApplicationForm = (props) => {
                 item3: ""
             });
         }
-
-       
-        /*props.history.push("/")*/
     }
 
     function handleNameChange(event) {
@@ -68,13 +65,6 @@ const ApplicationForm = (props) => {
     function handleItem3Change(event) {
         setData({ ...data, item3: event.target.value });
     }
-    /*function handleCitiesChange(event) {
-        setData({ ...data, cities: event.target.checked });
-    }
-    function handleItemsChange(event) {
-        setData({ ...data, items: event.target.checked });
-    }
-*/
 
     function validate() {
         let isValid = true;
@@ -204,92 +194,8 @@ const ApplicationForm = (props) => {
                                     <div className="form-control">
                                         <input type="text" name="item3" id="item3" onChange={handleItem3Change} value={data.item3} placeholder="Введите третий предмет" />{formError.item3 != "" && <div className="redcolor">{formError.item3}</div>}
                                     </div>
-                                    
                                 </div>
                             </div>
-                            {/*<div className="row">
-                                <div className="col-lg-6">
-                                    <div className="form-label">
-                                        <label>Город в котором хотели бы учиться:</label>
-                                    </div>
-                                </div>
-                                <div className="col-lg-6">
-                                    <div className="form-control">
-                                        <div className="form-control-check">
-                                            <input type="checkbox" name="city[]" id="city-1" onChange={handleCitiesChange} checked={data.cities} /><label
-                                                htmlFor="city-1">Минск</label>
-                                        </div>
-                                        <div className="form-control-check">
-                                            <input type="checkbox" name="city[]" id="city-2" onChange={handleCitiesChange} checked={data.cities} /><label
-                                                htmlFor="city-2">Гомель</label>
-                                        </div>
-                                        <div className="form-control-check">
-                                            <input type="checkbox" name="city[]" id="city-3" onChange={handleCitiesChange} checked={data.cities} /><label
-                                                htmlFor="city-3">Гродно</label>
-                                        </div>
-                                        <div className="form-control-check">
-                                            <input type="checkbox" name="city[]" id="city-4" onChange={handleCitiesChange} checked={data.cities} /><label
-                                                htmlFor="city-4">Брест</label>
-                                        </div>
-                                        <div className="form-control-check">
-                                            <input type="checkbox" name="city[]" id="city-5" onChange={handleCitiesChange} checked={data.cities} /><label
-                                                htmlFor="city-5">Витебск</label>
-                                        </div>
-                                        <div className="form-control-check">
-                                            <input type="checkbox" name="city[]" id="city-6" onChange={handleCitiesChange} checked={data.cities} /><label
-                                                htmlFor="city-6">Могилёв</label>
-                                        </div>
-                                    </div>
-                                </div>
-    </div>*/}
-
-                            {/*<div className="row">
-                                <div className="col-lg-6">
-                                    <div className="form-label">
-                                        <label>Вступительные испытания:</label>
-                                    </div>
-                                </div>
-                                <div className="col-lg-6">
-                                    <div className="form-control">
-                                        <div className="form-control-check">
-                                            <input type="checkbox" name="entranceTests[]" id="entranceTests-1" onChange={handleItemsChange} checked={data.items} /><label htmlFor="entranceTests-1">Математика</label>
-                                        </div>
-                                        <div className="form-control-check">
-                                            <input type="checkbox" name="entranceTests[]" id="entranceTests-2" onChange={handleItemsChange} checked={data.items} /><label
-                                                htmlFor="entranceTests-2">Русский язык/Белорусский язык</label>
-                                        </div>
-                                        <div className="form-control-check">
-                                            <input type="checkbox" name="entranceTests[]" id="entranceTests-3" onChange={handleItemsChange} checked={data.items} /><label
-                                                htmlFor="entranceTests-3">Обществоведение</label>
-                                        </div>
-                                        <div className="form-control-check">
-                                            <input type="checkbox" name="entranceTests[]" id="entranceTests-4" onChange={handleItemsChange} checked={data.items} /><label
-                                                htmlFor="entranceTests-4">Физика</label>
-                                        </div>
-                                        <div className="form-control-check">
-                                            <input type="checkbox" name="entranceTests[]" id="entranceTests-5" onChange={handleItemsChange} checked={data.items} /><label
-                                                htmlFor="entranceTests-5">Информатика</label>
-                                        </div>
-                                        <div className="form-control-check">
-                                            <input type="checkbox" name="entranceTests[]" id="entranceTests-6" onChange={handleItemsChange} checked={data.items} /><label
-                                                htmlFor="entranceTests-6">Химия</label>
-                                        </div>
-                                        <div className="form-control-check">
-                                            <input type="checkbox" name="entranceTests[]" id="entranceTests-7" onChange={handleItemsChange} checked={data.items} /><label
-                                                htmlFor="entranceTests-7">Иностранный язык</label>
-                                        </div>
-                                        <div className="form-control-check">
-                                            <input type="checkbox" name="entranceTests[]" id="entranceTests-8" onChange={handleItemsChange} checked={data.items} /><label
-                                                htmlFor="entranceTests-8">История Беларуси</label>
-                                        </div>
-                                        <div className="form-control-check">
-                                            <input type="checkbox" name="entranceTests[]" id="entranceTests-9" onChange={handleItemsChange} checked={data.items} /><label
-                                                htmlFor="entranceTests-9">Биология</label>
-                                        </div>
-                                    </div>
-                                </div>
-</div>*/}
-
 
                             <div className="row">
                                 <div className="col-lg-6">
@@ -305,22 +211,17 @@ const ApplicationForm = (props) => {
                 </div>
             </div>
         </section>
-
-
     </>)
-
 };
 
 const mapStateToProps = (state) => {
 
     return {
-        universities: state.university.universities, //post -  название reducer, описанного в /reducer/index.jsx, posts - массив продуктов
+        universities: state.university.universities,
         comments: state.university.comments,
         contacts: state.university.contacts,
         applications: state.university.applications,
-
     }
-
 }
 
 
@@ -331,4 +232,5 @@ const mapDispatchToProps = dispatch => ({
         })
     }
 });
+
 module.exports = connect(mapStateToProps, mapDispatchToProps)(ApplicationForm);

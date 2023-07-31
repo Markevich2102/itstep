@@ -68,82 +68,6 @@ ul {
   transform: translateY(-7px);
 }
 
-/*
-.filter-items-button__input {
-    text-decoration: none;
-    display: inline-block;
-    width: 200px;
-    height: 50px;
-    line-height: 45px;
-    border-radius: 45px;
-    margin: 10px 20px;
-    font-size: 11px;
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: 3px;
-    font-weight: 600;
-    color: #524f4e;
-    background: white;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
-    transition: .3s;
-}
-
-.filter-items-button__input:checked {
-    background: #2EE59D;
-    box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
-    color: white;
-    transform: translateY(-7px);
-}*/
-/*
-.filter-items-button__input {
-    display: inline-block;
-    position: relative;
-    padding-left: 30px;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-.filter-items-button__input input {
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-}*/
-/*
-.checkbox.style-f .checkbox__checkmark {
-    position: absolute;
-    top: 1px;
-    left: 0;
-    height: 22px;
-    width: 22px;
-    background-color: #eee;
-    transition: background-color 0.25s ease;
-    border-radius: 11px;
-}*/
-/*
-.filter-items-button__input:checked {
-    content: "";
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 22px;
-    height: 22px;
-    display: block;
-    background-color: #f7cb15;
-    border-radius: 50%;
-    transform: scale(0);
-    transition: transform 0.25s ease;
-}*/
-/*
-.checkbox.style-f .checkbox__body {
-    color: #333;
-    line-height: 1.4;
-    font-size: 16px;
-    transition: font-weight 0.25s ease;
-}*/
 .container {
   width: 100%;
   position: relative;
@@ -181,9 +105,7 @@ body {
   font-family: "Manrope", sans-serif;
   font-weight: 500;
   font-size: 16px;
-  /*text-align: center;*/
   word-spacing: 5px;
-  /*увеличивает отступ между словами*/
 }
 
 h1 {
@@ -329,9 +251,6 @@ header {
   position: relative;
   width: 100%;
   height: 500px;
-  /*align-items: center;/*
-  /*background: $gray;*/
-  /*color: $black;*/
   white-space: normal;
   /*текст переносится на др стр если не вмещается */
   background: #140342;
@@ -341,12 +260,7 @@ header {
   word-spacing: 10px;
   /*увеличивает отступ между словами*/
   display: inline-block;
-  /*background-image: url(./../../img/thumb.jpg);*/
-  /*background-repeat: no-repeat;*/
-  /*background: url(../../img/thumb.jpg);*/
   background-size: contain;
-  /*z-index: 9;*/
-  /*когда накадываются элементы друг на друга */
 }
 .mainPage .mainPage-text {
   padding: 20px 100px;
@@ -381,21 +295,15 @@ header {
   width: 300px;
   height: 300px;
   padding: 10px;
-  /* transform: scale(1.05);*/
 }
 .row-info-university .university .row-university-image {
   background-color: rgb(193, 230, 240);
   border-radius: 10px;
-  /*.university-image:hover{
-      transform: scale(1.05);
-  }*/
 }
 .row-info-university .university .row-university-image img {
   width: 300px;
   height: 200px;
   border-radius: 10px;
-  /*transform: scale(1.05);*/
-  /*background-size: cover;*/
 }
 .row-info-university .university .row-university-image .university-image-text {
   height: 70px;
@@ -413,9 +321,6 @@ header {
 .project2 {
   position: relative;
   padding: 40px;
-  /*align-items: center;/*
-  /*background: $gray;*/
-  /*color: $black;*/
   white-space: normal;
   /*текст переносится на др стр если не вмещается */
   font-weight: normal;
@@ -423,9 +328,6 @@ header {
   word-spacing: 10px;
   text-indent: 40px;
   /*увеличивает отступ между словами*/
-  /*background-image: url(./../../img/thumb.jpg);*/
-  /*background-repeat: no-repeat;*/
-  /*background: url(../../img/thumb.jpg);*/
   background-size: contain;
 }
 .project2 .container img {
@@ -447,9 +349,6 @@ header {
 .chosenSpecialty, .chosenSpecialty-text {
   position: relative;
   padding: 40px;
-  /*align-items: center;/*
-  /*background: $gray;*/
-  /*color: $black;*/
   white-space: normal;
   /*текст переносится на др стр если не вмещается */
   font-weight: normal;
@@ -457,9 +356,6 @@ header {
   word-spacing: 10px;
   text-indent: 40px;
   /*увеличивает отступ между словами*/
-  /*background-image: url(./../../img/thumb.jpg);*/
-  /*background-repeat: no-repeat;*/
-  /*background: url(../../img/thumb.jpg);*/
   background-size: contain;
 }
 .chosenSpecialty .chosenSpecialty-text2, .chosenSpecialty-text .chosenSpecialty-text2 {
@@ -474,16 +370,10 @@ header {
   .container-chosenUniversity .row-chosenUniversity-text {
     width: 50%;
     padding-left: 40px;
-    /*.chosenUniversity-text1 {
-
-
-    }*/
-    /* .chosenUniversity-text2 {}*/
   }
   .container-chosenUniversity .row-chosenUniversity-image {
     width: 75%;
     padding: 10px;
-    /*.chosenUniversity-image {}*/
   }
   .container-chosenUniversity .row-chosenUniversity-image img {
     border-radius: 10px;
@@ -538,8 +428,6 @@ header {
   .row-chosenUniversity-specialties-table .chosenUniversity-specialties-table .table {
     font-size: 18px;
     text-align: left;
-    /*.col2table {}*/
-    /*.col1table2 {}*/
   }
   .row-chosenUniversity-specialties-table .chosenUniversity-specialties-table .table .col1table {
     padding-right: 30px;
@@ -595,245 +483,14 @@ header {
     display: flex;
     justify-content: center;
     padding-bottom: 50px;
-    /*.button {
-        .floating-button {}
-    }*/
   }
-  /*.row-chosenUniversity-contacts-title {
-      .chosenUniversity-contacts-title {}
-
-  }
-
-  .row-chosenUniversity-contacts {
-      .chosenUniversity-contacts-phone {}
-
-      .chosenUniversity-contacts-info {
-          .row-chosenUniversity-contacts-info {
-              .chosenUniversity-contacts-phone {}
-
-              .chosenUniversity-contacts-email {}
-
-              .chosenUniversity-contacts-mail {}
-
-          }
-
-      }
-
-  }*/
-}
-@media (min-width: 576px) {
-  /*.container-chosenUniversity {
-      .row-chosenUniversity-text {
-          .chosenUniversity-text1 {}
-
-          .chosenUniversity-text2 {}
-
-      }
-
-      .row-chosenUniversity-image {
-          .chosenUniversity-image {}
-
-      }
-
-  }
-
-
-  .chosenUniversity-info {
-      .row-chosenUniversity-info-title {
-          .chosenUniversity-info-title {}
-
-      }
-
-
-      .row-chosenUniversity-info-text {
-          .chosenUniversity-info-text {}
-
-          .chosenUniversity-info-image {}
-
-      }
-  }
-
-
-  .row-chosenUniversity-specialties-info {
-      .chosenUniversity-specialties-info {}
-
-  }
-
-
-  .row-chosenUniversity-specialties-table {
-      .chosenUniversity-specialties-table {
-          .table {
-              .col1table {}
-
-              .col2table {}
-
-              .col1table1 {}
-
-              .col1table2 {}
-
-          }
-
-      }
-
-  }
-
-  .row-chosenUniversity-comments-title {
-      .chosenUniversity-comments-title {}
-
-      .row-chosenUniversity-comments-text {
-          .chosenUniversity-comments-image {}
-
-          .chosenUniversity-comments-text {}
-
-      }
-  }
-
-  .row-chosenUniversity-comments-buttons {
-      .chosenUniversity-comments-buttons {
-          .button {
-              .floating-button {}
-          }
-      }
-
-  }
-
-  .row-chosenUniversity-contacts-title {
-      .chosenUniversity-contacts-title {}
-
-  }
-
-  .row-chosenUniversity-contacts {
-      .chosenUniversity-contacts-phone {}
-
-      .chosenUniversity-contacts-info {
-          .row-chosenUniversity-contacts-info {
-              .chosenUniversity-contacts-phone {}
-
-              .chosenUniversity-contacts-email {}
-
-              .chosenUniversity-contacts-mail {}
-
-          }
-
-      }
-
-  }*/
 }
 @media (min-width: 768px) {
-  .container-chosenUniversity {
-    /*.row-chosenUniversity-image {
-        .chosenUniversity-image {}
-
-    }*/
-  }
   .container-chosenUniversity .row-chosenUniversity-text {
     padding: 40px 40px 40px 40px;
-    /*.chosenUniversity-text1 {}
-
-    .chosenUniversity-text2 {}*/
   }
-  /*.chosenUniversity-info {
-      .row-chosenUniversity-info-title {
-          .chosenUniversity-info-title {}
-
-      }
-
-
-      .row-chosenUniversity-info-text {
-          .chosenUniversity-info-text {}
-
-          .chosenUniversity-info-image {}
-
-      }
-  }
-
-
-  .row-chosenUniversity-specialties-info {
-      .chosenUniversity-specialties-info {}
-
-  }
-
-
-  .row-chosenUniversity-specialties-table {
-      .chosenUniversity-specialties-table {
-          .table {
-              .col1table {}
-
-              .col2table {}
-
-              .col1table1 {}
-
-              .col1table2 {}
-
-          }
-
-      }
-
-  }
-
-  .row-chosenUniversity-comments-title {
-      .chosenUniversity-comments-title {}
-
-      .row-chosenUniversity-comments-text {
-          .chosenUniversity-comments-image {}
-
-          .chosenUniversity-comments-text {}
-
-      }
-  }
-
-  .row-chosenUniversity-comments-buttons {
-      .chosenUniversity-comments-buttons {
-          .button {
-              .floating-button {}
-          }
-      }
-
-  }
-
-  .row-chosenUniversity-contacts-title {
-      .chosenUniversity-contacts-title {}
-
-  }
-
-  .row-chosenUniversity-contacts {
-      .chosenUniversity-contacts-phone {}
-
-      .chosenUniversity-contacts-info {
-          .row-chosenUniversity-contacts-info {
-              .chosenUniversity-contacts-phone {}
-
-              .chosenUniversity-contacts-email {}
-
-              .chosenUniversity-contacts-mail {}
-
-          }
-
-      }
-
-  }*/
 }
 @media (min-width: 1024px) {
-  /* .container-chosenUniversity {
-       .row-chosenUniversity-text {
-           .chosenUniversity-text1 {}
-
-           .chosenUniversity-text2 {}
-
-       }
-
-       .row-chosenUniversity-image {
-           .chosenUniversity-image {}
-
-       }
-
-   }*/
-  .chosenUniversity-info {
-    /* .row-chosenUniversity-info-title {
-         .chosenUniversity-info-title {}
-
-     }*/
-  }
   .chosenUniversity-info .row-chosenUniversity-info-text {
     display: flex;
     justify-content: center;
@@ -864,26 +521,6 @@ header {
     text-align: left;
     font-size: 11px;
   }
-  /*.row-chosenUniversity-specialties-info {
-      .chosenUniversity-specialties-info {}
-
-  }*/
-  /* .row-chosenUniversity-specialties-table {
-       .chosenUniversity-specialties-table {
-           .table {
-               .col1table {}
-
-               .col2table {}
-
-               .col1table1 {}
-
-               .col1table2 {}
-
-           }
-
-       }
-
-   }*/
   .chosenUniversity-comments {
     display: block;
     position: relative;
@@ -950,226 +587,7 @@ header {
     display: flex;
     justify-content: center;
     padding-bottom: 50px;
-    /* .button {
-         .floating-button {}
-     }*/
   }
-  /*.row-chosenUniversity-contacts-title {
-      .chosenUniversity-contacts-title {}
-
-  }
-
-  .row-chosenUniversity-contacts {
-      .chosenUniversity-contacts-phone {}
-
-      .chosenUniversity-contacts-info {
-          .row-chosenUniversity-contacts-info {
-              .chosenUniversity-contacts-phone {}
-
-              .chosenUniversity-contacts-email {}
-
-              .chosenUniversity-contacts-mail {}
-
-          }
-
-      }
-
-  }*/
-}
-@media (min-width: 1280px) {
-  /*.container-chosenUniversity {
-      .row-chosenUniversity-text {
-          .chosenUniversity-text1 {}
-
-          .chosenUniversity-text2 {}
-
-      }
-
-      .row-chosenUniversity-image {
-          .chosenUniversity-image {}
-
-      }
-
-  }
-
-
-  .chosenUniversity-info {
-      .row-chosenUniversity-info-title {
-          .chosenUniversity-info-title {}
-
-      }
-
-
-      .row-chosenUniversity-info-text {
-          .chosenUniversity-info-text {}
-
-          .chosenUniversity-info-image {}
-
-      }
-  }
-
-
-  .row-chosenUniversity-specialties-info {
-      .chosenUniversity-specialties-info {}
-
-  }
-
-
-  .row-chosenUniversity-specialties-table {
-      .chosenUniversity-specialties-table {
-          .table {
-              .col1table {}
-
-              .col2table {}
-
-              .col1table1 {}
-
-              .col1table2 {}
-
-          }
-
-      }
-
-  }
-
-  .row-chosenUniversity-comments-title {
-      .chosenUniversity-comments-title {}
-
-      .row-chosenUniversity-comments-text {
-          .chosenUniversity-comments-image {}
-
-          .chosenUniversity-comments-text {}
-
-      }
-  }
-
-  .row-chosenUniversity-comments-buttons {
-      .chosenUniversity-comments-buttons {
-          .button {
-              .floating-button {}
-          }
-      }
-
-  }
-
-  .row-chosenUniversity-contacts-title {
-      .chosenUniversity-contacts-title {}
-
-  }
-
-  .row-chosenUniversity-contacts {
-      .chosenUniversity-contacts-phone {}
-
-      .chosenUniversity-contacts-info {
-          .row-chosenUniversity-contacts-info {
-              .chosenUniversity-contacts-phone {}
-
-              .chosenUniversity-contacts-email {}
-
-              .chosenUniversity-contacts-mail {}
-
-          }
-
-      }
-
-  }*/
-}
-@media (min-width: 1920px) {
-  /*.container-chosenUniversity {
-      .row-chosenUniversity-text {
-          .chosenUniversity-text1 {}
-
-          .chosenUniversity-text2 {}
-
-      }
-
-      .row-chosenUniversity-image {
-          .chosenUniversity-image {}
-
-      }
-
-  }
-
-
-  .chosenUniversity-info {
-      .row-chosenUniversity-info-title {
-          .chosenUniversity-info-title {}
-
-      }
-
-
-      .row-chosenUniversity-info-text {
-          .chosenUniversity-info-text {}
-
-          .chosenUniversity-info-image {}
-
-      }
-  }
-
-  .row-chosenUniversity-specialties-info {
-      .chosenUniversity-specialties-info {}
-
-  }
-
-
-  .row-chosenUniversity-specialties-table {
-      .chosenUniversity-specialties-table {
-          .table {
-              .col1table {}
-
-              .col2table {}
-
-              .col1table1 {}
-
-              .col1table2 {}
-
-          }
-
-      }
-
-  }
-
-  .row-chosenUniversity-comments-title {
-      .chosenUniversity-comments-title {}
-
-      .row-chosenUniversity-comments-text {
-          .chosenUniversity-comments-image {}
-
-          .chosenUniversity-comments-text {}
-
-      }
-  }
-
-  .row-chosenUniversity-comments-buttons {
-      .chosenUniversity-comments-buttons {
-          .button {
-              .floating-button {}
-          }
-      }
-
-  }
-
-  .row-chosenUniversity-contacts-title {
-      .chosenUniversity-contacts-title {}
-
-  }
-
-  .row-chosenUniversity-contacts {
-      .chosenUniversity-contacts-phone {}
-
-      .chosenUniversity-contacts-info {
-          .row-chosenUniversity-contacts-info {
-              .chosenUniversity-contacts-phone {}
-
-              .chosenUniversity-contacts-email {}
-
-              .chosenUniversity-contacts-mail {}
-
-          }
-
-      }
-
-  }*/
 }
 @media (min-width: 0px) {
   .chosenUniversity-contacts {
@@ -1181,7 +599,6 @@ header {
     padding: 30px 40px 0 40px;
   }
   .chosenUniversity-contacts .row-chosenUniversity-contacts {
-    /*display: flex;*/
     justify-content: center;
     padding: 50px;
     font-size: 25px;
@@ -1216,9 +633,6 @@ header {
 .listSpecialties {
   position: relative;
   padding: 40px;
-  /*align-items: center;/*
-  /*background: $gray;*/
-  /*color: $black;*/
   white-space: normal;
   /*текст переносится на др стр если не вмещается */
   font-weight: normal;
@@ -1226,16 +640,11 @@ header {
   word-spacing: 10px;
   text-indent: 40px;
   /*увеличивает отступ между словами*/
-  /*background-image: url(./../../img/thumb.jpg);*/
-  /*background-repeat: no-repeat;*/
-  /*background: url(../../img/thumb.jpg);*/
   background-size: contain;
 }
 .listSpecialties .table {
   font-size: 18px;
   text-align: left;
-  /*.col2table {}*/
-  /*.col1table2 {}*/
 }
 .listSpecialties .table .col1table {
   padding-right: 30px;
@@ -1252,9 +661,6 @@ header {
 .regform {
   position: relative;
   width: 100%;
-  /*align-items: center;/*
-  /*background: $gray;*/
-  /*color: $black;*/
   white-space: normal;
   /*текст переносится на др стр если не вмещается */
   color: #FFFFFF;
@@ -1262,12 +668,7 @@ header {
   word-spacing: 10px;
   /*увеличивает отступ между словами*/
   display: inline-block;
-  /*background-image: url(./../../img/thumb.jpg);*/
-  /*background-repeat: no-repeat;*/
-  /*background: url(../../img/thumb.jpg);*/
   background-size: contain;
-  /*z-index: 9;*/
-  /*когда накадываются элементы друг на друга */
 }
 .regform .application-text {
   padding: 30px 100px;
@@ -1275,16 +676,10 @@ header {
 }
 .regform .row-application-form {
   position: relative;
-  /*float: left;*/
   display: flex;
   justify-content: center;
   box-sizing: border-box;
-  /*justify-content: center;*/
-  /*display: flex;
-  flex-wrap: wrap;*/
   color: #000;
-  /*width: 100%;
-  padding: 40px 0;*/
 }
 .regform .row-application-form .application-form {
   display: flex;
@@ -1293,8 +688,6 @@ header {
   width: 500px;
   margin: 0 auto;
   padding: 50px 0;
-  /*float: none;
-  background: #fff;*/
 }
 
 .redcolor {
@@ -1376,53 +769,6 @@ header {
 }
 
 @media (min-width: 768px) {
-  /* .col-md-1 {
-       width: 8.33333%;
-   }
-
-   .col-md-2 {
-       width: 16.66666%;
-   }
-
-   .col-md-3 {
-       width: 25%;
-   }
-
-   .col-md-4 {
-       width: 33.33333%;
-   }
-
-   .col-md-5 {
-       width: 41.66666%;
-   }
-
-   .col-md-6 {
-       width: 50%;
-   }
-
-   .col-md-7 {
-       width: 58.33333%;
-   }
-
-   .col-md-8 {
-       width: 66.66666%;
-   }
-
-   .col-md-9 {
-       width: 75%;
-   }
-
-   .col-md-10 {
-       width: 83.33333%;
-   }
-
-   .col-md-11 {
-       width: 91.66666%;
-   }
-
-   .col-md-12 {
-       width: 100%;
-   }*/
   .col-md-1,
   .col-md-2,
   .col-md-3,
@@ -1439,53 +785,6 @@ header {
   }
 }
 @media (min-width: 1200px) {
-  /* .col-lg-1 {
-       width: 8.33333%;
-   }
-
-   .col-lg-2 {
-       width: 16.66666%;
-   }
-
-   .col-lg-3 {
-       width: 25%;
-   }
-
-   .col-lg-4 {
-       width: 33.33333%;
-   }
-
-   .col-lg-5 {
-       width: 41.66666%;
-   }
-
-   .col-lg-6 {
-       width: 50%;
-   }
-
-   .col-lg-7 {
-       width: 58.33333%;
-   }
-
-   .col-lg-8 {
-       width: 66.66666%;
-   }
-
-   .col-lg-9 {
-       width: 75%;
-   }
-
-   .col-lg-10 {
-       width: 83.33333%;
-   }
-
-   .col-lg-11 {
-       width: 91.66666%;
-   }
-
-   .col-lg-12 {
-       width: 100%;
-   }*/
   .col-lg-1,
   .col-lg-2,
   .col-lg-3,
@@ -1576,9 +875,6 @@ select,
 .choiceSpecialties {
   position: relative;
   width: 100%;
-  /*align-items: center;/*
-  /*background: $gray;*/
-  /*color: $black;*/
   white-space: normal;
   /*текст переносится на др стр если не вмещается */
   color: #FFFFFF;
@@ -1586,12 +882,7 @@ select,
   word-spacing: 10px;
   /*увеличивает отступ между словами*/
   display: inline-block;
-  /*background-image: url(./../../img/thumb.jpg);*/
-  /*background-repeat: no-repeat;*/
-  /*background: url(../../img/thumb.jpg);*/
   background-size: contain;
-  /*z-index: 9;*/
-  /*когда накадываются элементы друг на друга */
 }
 .choiceSpecialties .choiceSpecialties-text {
   padding: 30px 100px;
@@ -1603,8 +894,6 @@ select,
 }
 .choiceSpecialties .row-choiceSpecialties-items {
   justify-content: center;
-  /*display: flex;
-  flex-wrap: wrap;*/
   color: #000;
   width: 100%;
   padding: 40px 0;
@@ -1674,9 +963,6 @@ select,
 .application {
   position: relative;
   width: 100%;
-  /*align-items: center;/*
-  /*background: $gray;*/
-  /*color: $black;*/
   white-space: normal;
   /*текст переносится на др стр если не вмещается */
   color: #FFFFFF;
@@ -1684,12 +970,7 @@ select,
   word-spacing: 10px;
   /*увеличивает отступ между словами*/
   display: inline-block;
-  /*background-image: url(./../../img/thumb.jpg);*/
-  /*background-repeat: no-repeat;*/
-  /*background: url(../../img/thumb.jpg);*/
   background-size: contain;
-  /*z-index: 9;*/
-  /*когда накадываются элементы друг на друга */
 }
 .application .application-text {
   padding: 30px 100px;
@@ -1697,16 +978,10 @@ select,
 }
 .application .row-application-form {
   position: relative;
-  /*float: left;*/
   display: flex;
   justify-content: center;
   box-sizing: border-box;
-  /*justify-content: center;*/
-  /*display: flex;
-  flex-wrap: wrap;*/
   color: #000;
-  /*width: 100%;
-  padding: 40px 0;*/
 }
 .application .row-application-form .application-form {
   display: flex;
@@ -1715,8 +990,6 @@ select,
   width: 500px;
   margin: 0 auto;
   padding: 50px 0;
-  /*float: none;
-  background: #fff;*/
 }
 
 .redcolor {
@@ -1802,53 +1075,6 @@ select,
 }
 
 @media (min-width: 768px) {
-  /* .col-md-1 {
-       width: 8.33333%;
-   }
-
-   .col-md-2 {
-       width: 16.66666%;
-   }
-
-   .col-md-3 {
-       width: 25%;
-   }
-
-   .col-md-4 {
-       width: 33.33333%;
-   }
-
-   .col-md-5 {
-       width: 41.66666%;
-   }
-
-   .col-md-6 {
-       width: 50%;
-   }
-
-   .col-md-7 {
-       width: 58.33333%;
-   }
-
-   .col-md-8 {
-       width: 66.66666%;
-   }
-
-   .col-md-9 {
-       width: 75%;
-   }
-
-   .col-md-10 {
-       width: 83.33333%;
-   }
-
-   .col-md-11 {
-       width: 91.66666%;
-   }
-
-   .col-md-12 {
-       width: 100%;
-   }*/
   .col-md-1,
   .col-md-2,
   .col-md-3,
@@ -1865,53 +1091,6 @@ select,
   }
 }
 @media (min-width: 1200px) {
-  /* .col-lg-1 {
-       width: 8.33333%;
-   }
-
-   .col-lg-2 {
-       width: 16.66666%;
-   }
-
-   .col-lg-3 {
-       width: 25%;
-   }
-
-   .col-lg-4 {
-       width: 33.33333%;
-   }
-
-   .col-lg-5 {
-       width: 41.66666%;
-   }
-
-   .col-lg-6 {
-       width: 50%;
-   }
-
-   .col-lg-7 {
-       width: 58.33333%;
-   }
-
-   .col-lg-8 {
-       width: 66.66666%;
-   }
-
-   .col-lg-9 {
-       width: 75%;
-   }
-
-   .col-lg-10 {
-       width: 83.33333%;
-   }
-
-   .col-lg-11 {
-       width: 91.66666%;
-   }
-
-   .col-lg-12 {
-       width: 100%;
-   }*/
   .col-lg-1,
   .col-lg-2,
   .col-lg-3,
@@ -2065,22 +1244,11 @@ footer {
   }
   .row-footer .contact-footer .row-contact-logo .contact-logo ul {
     display: flex;
-    /*в строку выстраивает*/
     justify-content: center;
     box-sizing: border-box;
-    /*flex-wrap: wrap;*/
-    /*переноситна другую стр если не помещается */
-    /*display: flex;
-                    list-style: none;
-                    margin: 0;
-                    padding: 0;
-                    align-items: center;
-                    width: 558px;*/
   }
   .row-footer .contact-footer .row-contact-logo .contact-logo ul li {
     display: flex;
-    /*height: 90px;
-                        padding: 0 20px;*/
     align-items: center;
     width: 25%;
     padding: 5px;
@@ -2153,22 +1321,11 @@ footer {
   }
   .row-footer .contact-footer .row-contact-logo .contact-logo ul {
     display: flex;
-    /*в строку выстраивает*/
     justify-content: center;
     box-sizing: border-box;
-    /*flex-wrap: wrap;*/
-    /*переноситна другую стр если не помещается */
-    /*display: flex;
-                list-style: none;
-                margin: 0;
-                padding: 0;
-                align-items: center;
-                width: 558px;*/
   }
   .row-footer .contact-footer .row-contact-logo .contact-logo ul li {
     display: flex;
-    /*height: 90px;
-                    padding: 0 20px;*/
     align-items: center;
     width: 25%;
     padding: 5px;

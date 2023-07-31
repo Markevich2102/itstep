@@ -2,8 +2,8 @@ const React = require("react");
 const connect = require("react-redux").connect;
 const { push } = require("connected-react-router");
 
-const Footer = (props) => {
 
+const Footer = (props) => {
 
     return <>
         <footer>

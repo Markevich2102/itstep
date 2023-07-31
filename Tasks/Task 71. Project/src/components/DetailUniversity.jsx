@@ -1,6 +1,5 @@
 const React = require("react");
 const connect = require("react-redux").connect;
-
 const FormComment = require("./FormComment.jsx");
 
 
@@ -22,7 +21,7 @@ const DetailUniversity = (props) => {
         }
         comment.event.target.classList.add("addComment");
     }
-    
+
     return <>
         <section className="chosenUniversity">
             <div className="container container-chosenUniversity">
@@ -80,23 +79,17 @@ const DetailUniversity = (props) => {
                             </thead>
                             <tbody>
                                 {specialties.map((speciality, index) => {
-                                    return <tr key={speciality.id} onClick={() => { props.history.push(`/detailSpecialty/${speciality.id}`)}}>
+                                    return <tr key={speciality.id}>
                                         <td className="col1table1">{speciality.speciality}</td>
                                         <td className="col1table2"> {speciality.qualification}</td>
-                                        </tr>
+                                    </tr>
                                 })}
-                                
                             </tbody>
                         </table>
                     </div>
                 </div>
             </div>
         </section>
-
-
-
-
-
 
         <section className="chosenUniversity-comments">
             <div className="container">
@@ -112,18 +105,15 @@ const DetailUniversity = (props) => {
                         <div className="chosenUniversity-comments-text">
                             <p>{comment.text}</p>
                         </div></div>
-                    
                 })}
-
 
                 <div className="row-chosenUniversity-comments-buttons">
                     <div className="chosenUniversity-comments-buttons"> <FormComment id={university.id} />
-                    
+
                     </div>
                 </div>
             </div>
         </section>
-
 
         <section className="chosenUniversity-contacts">
             <div className="container">
@@ -157,11 +147,8 @@ const DetailUniversity = (props) => {
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
-
-
     </>
 }
 
@@ -171,16 +158,11 @@ const mapStateToProps = state => {
         specialties: state.university.specialties,//university -  название reducer, описанного в /reducer/index.jsx, universities - массив университетов
         comments: state.university.comments,
         contacts: state.university.contacts
-
     }
 };
 
 const mapDispatchToProps = dispatch => ({
-    /* onDeleteUniversityId: (universityId) => {
-         dispatch({
-             type: DELETE_UNIVERSITY, universityId
-         })
-     }*/
+
 });
 
 module.exports = connect(mapStateToProps, mapDispatchToProps)(DetailUniversity);

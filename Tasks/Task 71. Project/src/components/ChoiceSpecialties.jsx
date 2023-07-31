@@ -3,7 +3,7 @@ const connect = require("react-redux").connect;
 const Universitety = require("./Universitety.jsx");
 
 
-const ChoiceSpecialties = (props) => { //props.user
+const ChoiceSpecialties = (props) => {
 
     return <>
         <section className="choiceSpecialties">
@@ -19,53 +19,53 @@ const ChoiceSpecialties = (props) => { //props.user
                 <div className="row-choiceSpecialties-items">
                     <div className="choiceSpecialties-items">
                         <label className="filter-items-button">
-                            <input type="checkbox" name="item" value="107" className="filter-items-button__input"/>
-                                <span className="filter-items-button__button">Математика
-                                </span>
+                            <input type="checkbox" name="item" value="107" className="filter-items-button__input" />
+                            <span className="filter-items-button__button">Математика
+                            </span>
                         </label>
                         <label className="filter-items-button">
-                            <input type="checkbox" name="item" value="107" className="filter-items-button__input"/>
-                                <span className="filter-items-button__button">Рус.яз./Бел.яз.
-                                </span>
+                            <input type="checkbox" name="item" value="107" className="filter-items-button__input" />
+                            <span className="filter-items-button__button">Рус.яз./Бел.яз.
+                            </span>
                         </label>
                         <label className="filter-items-button">
-                            <input type="checkbox" name="item" value="107" className="filter-items-button__input"/>
-                                <span className="filter-items-button__button">Обществоведение
-                                </span>
+                            <input type="checkbox" name="item" value="107" className="filter-items-button__input" />
+                            <span className="filter-items-button__button">Обществоведение
+                            </span>
                         </label>
                     </div>
                     <div className="choiceSpecialties-items"><label className="filter-items-button">
-                        <input type="checkbox" name="item" value="107" className="filter-items-button__input"/>
-                            <span className="filter-items-button__button">Физика
-                            </span>
+                        <input type="checkbox" name="item" value="107" className="filter-items-button__input" />
+                        <span className="filter-items-button__button">Физика
+                        </span>
                     </label>
                         <label className="filter-items-button">
-                            <input type="checkbox" name="item" value="107" className="filter-items-button__input"/>
-                                <span className="filter-items-button__button">Информатика
-                                </span>
+                            <input type="checkbox" name="item" value="107" className="filter-items-button__input" />
+                            <span className="filter-items-button__button">Информатика
+                            </span>
                         </label>
                         <label className="filter-items-button">
-                            <input type="checkbox" name="item" value="107" className="filter-items-button__input"/>
-                                <span className="filter-items-button__button">Химия
-                                </span>
+                            <input type="checkbox" name="item" value="107" className="filter-items-button__input" />
+                            <span className="filter-items-button__button">Химия
+                            </span>
                         </label>
 
                     </div>
                     <div className="choiceSpecialties-items">
                         <label className="filter-items-button">
-                            <input type="checkbox" name="item" value="107" className="filter-items-button__input"/>
-                                <span className="filter-items-button__button">Иностранный язык
-                                </span>
+                            <input type="checkbox" name="item" value="107" className="filter-items-button__input" />
+                            <span className="filter-items-button__button">Иностранный язык
+                            </span>
                         </label>
                         <label className="filter-items-button">
-                            <input type="checkbox" name="item" value="107" className="filter-items-button__input"/>
-                                <span className="filter-items-button__button">История Беларуси
-                                </span>
+                            <input type="checkbox" name="item" value="107" className="filter-items-button__input" />
+                            <span className="filter-items-button__button">История Беларуси
+                            </span>
                         </label>
                         <label className="filter-items-button">
-                            <input type="checkbox" name="item" value="107" className="filter-items-button__input"/>
-                                <span className="filter-items-button__button">Биология
-                                </span>
+                            <input type="checkbox" name="item" value="107" className="filter-items-button__input" />
+                            <span className="filter-items-button__button">Биология
+                            </span>
                         </label>
 
                     </div>
@@ -77,16 +77,12 @@ const ChoiceSpecialties = (props) => { //props.user
                 </div>
             </div>
         </section>
-        <Universitety/>
-        
-        
+        <Universitety />
     </>
 }
 
 const mapStateToProps = state => {
-    return {
-        
-    }
+    return {}
 };
 
 const mapDispatchToProps = dispatch => ({});

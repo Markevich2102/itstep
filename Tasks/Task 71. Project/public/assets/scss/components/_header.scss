@@ -37,9 +37,10 @@ header {
             font-weight: normal;
             display: none;
         }
-       .entrance{
-        margin-left: auto;
-       }
+
+        .entrance {
+            margin-left: auto;
+        }
 
     }
 
@@ -55,10 +56,11 @@ header {
         .choose-city {
             display: block;
         }
-                .entrance {
-                    margin-left: 0;
-                }
-                 
+
+        .entrance {
+            margin-left: 0;
+        }
+
     }
 
     @media (min-width: 768px) {

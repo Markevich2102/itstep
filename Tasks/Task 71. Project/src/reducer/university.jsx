@@ -9,7 +9,7 @@ const reducer = (state = {}, action) => {
                 comments: action.comments,
                 specialties: action.specialties,
                 contacts: action.contacts,
-                applications:action.applications,
+                applications: action.applications,
                 users: action.users,
                 lastIdUniversity: action.lastIdUniversity,
                 lastIdComment: action.lastIdComment,
@@ -17,8 +17,8 @@ const reducer = (state = {}, action) => {
                 lastUserId: action.lastUserId,
                 currentUser: action.currentUser,
                 specialties1: action.specialties1,
-
             }
+
         case "SIGNUP":
             let newId = ++state.lastUserId;
             let newUser = {
@@ -36,21 +36,6 @@ const reducer = (state = {}, action) => {
                 ...state,
                 currentUser: action.login
             }
-
-        /*case "UNIVERSITY_ADD":
-            let newId = ++state.lastIdUniversity;
-            let newUniversity = {
-                id: newId,
-                name: action.university.name,
-                title: action.university.title,
-                text: action.university.text,
-                image: action.university.image
-            };
-            return {
-                ...state,
-                universities: [...state.universities, newUniversity],
-                lastIdUniversity: newId
-            };*/
 
         case "APPLICATION_ADD":
             let newIdApplication = ++state.lastIdApplication;
@@ -77,37 +62,14 @@ const reducer = (state = {}, action) => {
                 universityId: action.comment.universityId,
                 author: action.comment.author,
                 text: action.comment.text
-                
+
             };
             return {
                 ...state,
                 comments: [...state.comments, newComment],
                 lastIdComment: newIdComment
             };
-            
-/*
-        case "UNIVERSITY_DELETE":
-            return {
-                ...state,
-                universities: state.universities.filter((item) => item.id != action.universityId)
-            };
-
-     
-
-        case "UNIVERSITY_EDIT":
-            return {...state,
-                universities: state.universities.map((item) => {
-                    if (item.id == action.id) {
-                        item.name = action.university.name;
-                        item.title = action.university.title;
-                        item.text = action.university.text;
-                        item.image = action.university.image;
-                    }
-                    return item;
-                })
-            }*/
             break;
-
     }
 
     return state;
